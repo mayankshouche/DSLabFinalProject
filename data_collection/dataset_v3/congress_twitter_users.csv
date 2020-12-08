@@ -1,0 +1,659 @@
+type,name,screen_name,party,id
+caucus,Blue Collar Caucus,BlueCollarDems,D,817097052375187457
+caucus,Blue Dog Coalition,HouseBlueDogs,D,224685124
+caucus,Congressional Antitrust Caucus,AntitrustCaucus,D,951207213728698374
+caucus,Congressional Asian Pacific American Caucus,CAPAC,D,192955168
+caucus,Congressional Black Caucus,CBCPAC,D,204966625
+caucus,Congressional Black Caucus,TheBlackCaucus,D,233783568
+caucus,Congressional Health Caucus,HealthCaucus,R,20020575
+caucus,Congressional Pro-Choice Caucus,ProChoiceCaucus,D,809505942186455041
+caucus,Congressional Progressive Caucus,USProgressives,D,246088673
+caucus,Congressional Western Caucus,westerncaucus,R,144986277
+caucus,Democracy Reform Task Force,House_DRTF,D,819992111407919104
+caucus,Democratic Women's Caucus,HouseDemWomen,D,890675418780618753
+caucus,GOP Doctors Caucus,gopdoccaucus,R,119899270
+caucus,Hispanic Caucus,HispanicCaucus,D,33530012
+caucus,House Freedom Caucus,conversations,R,562989744
+caucus,House Freedom Caucus,freedomcaucus,R,2990729241
+caucus,House Liberty Caucus,libertycaucus,R,426862142
+caucus,LGBT Equality Caucus,LGBTEqCaucus,D,1392282998
+caucus,Media Fairness Caucus,FairMediaCaucus,R,819251374500278272
+caucus,New Democrat Coalition,NewDemCoalition,D,761783018
+caucus,Republican Study,RepublicanStudy,R,22528309
+caucus,Republican Women's Policy Committee,LadiesGOP,R,1322558402
+caucus,Safe Climate Caucus,caucusonclimate,D,2792540601
+caucus,Sustainable Energy & Environment Coalition,seec,D,29205600
+committee,House Committee on Agriculture,HouseAgGOP,R,234573331
+committee,House Committee on Agriculture,HouseAgDems,D,989317210463186946
+committee,House Committee on Appropriations,AppropsDems,D,30912937
+committee,House Committee on Appropriations,HouseAppropsGOP,R,301549400
+committee,House Committee on Armed Services,HASCRepublicans,R,20192403
+committee,House Committee on Armed Services,HASCDemocrats,D,74294786
+committee,House Committee on Education and the Workforce,EdLaborCmte,D,7004382
+committee,House Committee on Education and the Workforce,EdLaborGOP,R,16424044
+committee,House Committee on Energy and Commerce,EnergyCommerce,D,30929600
+committee,House Committee on Energy and Commerce,HouseCommerce,R,114756202
+committee,House Committee on Financial Services,FinancialCmte,R,42924141
+committee,House Committee on Financial Services,FSCDems,D,294084341
+committee,House Committee on Foreign Affairs,HouseForeign,D,61206798
+committee,House Committee on Foreign Affairs,HouseForeignGOP,R,75367781
+committee,House Committee on Homeland Security,HomelandDems,D,208692908
+committee,House Committee on Homeland Security,HomelandGOP,R,239964567
+committee,House Committee on House Administration,HouseAdm_Dems,D,19716781
+committee,House Committee on House Administration,HouseAdmnGOP,R,224391627
+committee,House Committee on Natural Resources,NatResources,R,41445718
+committee,House Committee on Natural Resources,NRDems,D,247486443
+committee,House Committee on Oversight and Government Reform,GOPoversight,R,22508473
+committee,House Committee on Oversight and Government Reform,OversightDems,D,31122582
+committee,House Committee on Rules,RulesReps,R,78369108
+committee,House Committee on Rules,RulesDemocrats,D,855482971868069890
+committee,"House Committee on Science, Space, and Technology",HouseScience,D,22053641
+committee,"House Committee on Science, Space, and Technology",housesciencegop,R,23103488
+committee,House Committee on Small Business,HSBCgop,R,2978291435
+committee,House Committee on Small Business,HouseSmallBiz,D,861611548250394624
+committee,House Committee on Transportation and Infrastructure,TransportDems,D,21684013
+committee,House Committee on Transportation and Infrastructure,TransportGOP,R,35829796
+committee,House Committee on Veterans' Affairs,VetAffairsDems,D,151519500
+committee,House Committee on Veterans' Affairs,HouseVetAffairs,R,282093902
+committee,House Committee on Ways and Means,WaysandMeansGOP,R,12788332
+committee,House Committee on Ways and Means,WaysMeansCmte,D,31128529
+committee,House Committee on the Budget,HouseBudgetDems,D,151963505
+committee,House Committee on the Budget,housebudgetGOP,R,778700700696010754
+committee,House Committee on the Judiciary,HouseJudiciary,D,246357149
+committee,House Committee on the Judiciary,JudiciaryGOP,R,1131917492
+committee,House Select Committee on the Climate Crisis,ClimateCrisis,D,1109185600354242563
+committee,House Select Committee on the Modernization of Congress,ModernizeCmte,D,1105127249852936200
+committee,House Select Committee on the Modernization of Congress,ModComGOP,R,1108014862926528512
+committee,House Select Subcommittee on the Coronavirus Crisis,COVIDOversight,D,1257758638275473409
+committee,House Select Subcommittee on the Coronavirus Crisis,SelectGOP,R,1261286876142604288
+member,Don Young,repdonyoung,R,37007274
+member,Bradley Byrne,RepByrne,R,2253968388
+member,Gary Palmer,USRepGaryPalmer,R,2861616083
+member,Martha Roby,RepMarthaRoby,R,224294785
+member,Mike Rogers,RepMikeRogersAL,R,33977070
+member,Mo Brooks,RepMoBrooks,R,237299871
+member,Robert Aderholt,Robert_Aderholt,R,76452765
+member,Terri Sewell,RepTerriSewell,D,381152398
+member,Bruce Westerman,RepWesterman,R,2852998461
+member,French Hill,RepFrenchHill,R,2953974395
+member,Rick Crawford,RepRickCrawford,R,233693291
+member,Steve Womack,rep_stevewomack,R,234469322
+member,Amata Coleman Radewagen,RepAmata,R,3026622545
+member,Andy Biggs,RepAndyBiggsAZ,R,816652616625168388
+member,Ann Kirkpatrick,RepKirkpatrick,D,1081240074946252801
+member,David Schweikert,RepDavid,R,229197216
+member,Debbie Lesko,RepDLesko,R,996094929733652481
+member,Greg Stanton,RepGregStanton,D,1080885078425784320
+member,Paul Gosar,RepGosar,R,240760644
+member,Raul Grijalva,RepRaulGrijalva,D,28602948
+member,Ruben Gallego,RepRubenGallego,D,2966570782
+member,Tom O'Halleran,RepOHalleran,D,808416682972770304
+member,Adam Schiff,RepAdamSchiff,D,29501253
+member,Alan Lowenthal,RepLowenthal,D,1055730738
+member,Ami Bera,RepBera,D,950783972
+member,Anna Eshoo,RepAnnaEshoo,D,249348006
+member,Barbara Lee,RepBarbaraLee,D,248735463
+member,Brad Sherman,BradSherman,D,30216513
+member,Devin Nunes,DevinNunes,R,54412900
+member,Devin Nunes,RepDevinNunes,R,344972339
+member,Doris Matsui,DorisMatsui,D,38254095
+member,Doug LaMalfa,RepLaMalfa,R,1069124515
+member,Eric Swalwell,RepSwalwell,D,942156122
+member,Gil Cisneros,RepGilCisneros,D,1080986167003230208
+member,Grace Napolitano,gracenapolitano,D,161411080
+member,Harley Rouda,RepHarley,D,1075080722241736704
+member,Jackie Speier,RepSpeier,D,24913074
+member,Jared Huffman,RepHuffman,D,1071102246
+member,Jerry McNerney,RepMcNerney,D,385429543
+member,Jim Costa,RepJimCosta,D,245451804
+member,Jimmy Gomez,RepJimmyGomez,D,2371339658
+member,Jimmy Panetta,RepJimmyPanetta,D,796736612554117120
+member,John Garamendi,RepGaramendi,D,88806753
+member,Josh Harder,RepJoshHarder,D,1080851152151953410
+member,Juan Vargas,RepJuanVargas,D,1260172386
+member,Judy Chu,RepJudyChu,D,193732179
+member,Julia Brownley,RepBrownley,D,1243902714
+member,Karen Bass,RepKarenBass,D,239949176
+member,Katie Porter,RepKatiePorter,D,1081222837459996672
+member,Ken Calvert,KenCalvert,R,22545491
+member,Kevin McCarthy,GOPLeader,R,19739126
+member,Linda Sanchez,RepLindaSanchez,D,312134473
+member,Lou Correa,RepLouCorrea,D,815985039485837312
+member,Lucille Roybal-Allard,RepRoybalAllard,D,479872233
+member,Mark DeSaulnier,RepDeSaulnier,D,2968007206
+member,Mark Takano,RepMarkTakano,D,1037321378
+member,Maxine Waters,RepMaxineWaters,D,36686040
+member,Mike Garcia,repmikegarcia,R,1262531473057423361
+member,Mike Levin,RepMikeLevin,D,1072134139560620033
+member,Mike Thompson,RepThompson,D,303861808
+member,Nancy Pelosi,SpeakerPelosi,D,15764644
+member,Nanette Barragan,RepBarragan,D,816833925456789505
+member,Norma Torres,NormaJTorres,D,236279233
+member,Pete Aguilar,RepPeteAguilar,D,3018670151
+member,Raul Ruiz,RepRaulRuizMD,D,1089859058
+member,Ro Khanna,RepRoKhanna,D,816298918468259841
+member,Salud Carbajal,RepCarbajal,D,816157667882373120
+member,Scott Peters,RepScottPeters,D,1135486501
+member,Susan Davis,RepSusanDavis,D,432771620
+member,TJ Cox,RepTjCox,D,1080875913926139910
+member,Ted Lieu,RepTedLieu,D,3044993235
+member,Tom McClintock,RepMcClintock,R,50152441
+member,Tony Cardenas,RepCardenas,D,1222257180
+member,Zoe Lofgren,RepZoeLofgren,D,267938462
+member,Diana DeGette,RepDianaDeGette,D,28599820
+member,Doug Lamborn,RepDLamborn,R,584012853
+member,Ed Perlmutter,RepPerlmutter,D,20552026
+member,Jason Crow,RepJasonCrow,D,1080191866509901826
+member,Joe Neguse,RepJoeNeguse,D,1078749802765139968
+member,Ken Buck,RepKenBuck,R,2862577383
+member,Scott Tipton,RepTipton,R,242873057
+member,Jahana Hayes,RepJahanaHayes,D,1082086081238102018
+member,Jim Himes,jahimes,D,31611298
+member,Joe Courtney,RepJoeCourtney,D,85396297
+member,John B. Larson,RepJohnLarson,D,50452197
+member,Rosa DeLauro,rosadelauro,D,140519774
+member,Eleanor Holmes Norton,EleanorNorton,D,23600262
+member,Lisa Blunt Rochester,RepLBR,D,817050219007328258
+member,Al Lawson,RepAlLawsonJr,D,818472418620608512
+member,Alcee Hastings,RepHastingsFL,D,2433737761
+member,Bill Posey,congbillposey,R,25086658
+member,Brian Mast,RepBrianMast,R,814103950404239360
+member,Charlie Crist,RepCharlieCrist,D,816030424778543104
+member,Daniel Webster,RepWebster,R,281540744
+member,Darren Soto,RepDarrenSoto,D,818713465653051392
+member,Debbie Mucarsel-Powell,RepDMP,D,1080941062028447744
+member,Debbie Wasserman Schultz,RepDWStweets,D,1140648348
+member,Donna Shalala,RepShalala,D,1060584809095925762
+member,Francis Rooney,RepRooney,R,816111677917851649
+member,Frederica Wilson,RepWilson,D,234014087
+member,Greg Steube,RepGregSteube,R,1083125649609506816
+member,Gus Bilirakis,RepGusBilirakis,R,26051676
+member,John Rutherford,RepRutherfordFL,R,828977216595849216
+member,Kathy Castor,USRepKCastor,D,1880674038
+member,Lois Frankel,RepLoisFrankel,D,1077121945
+member,Mario Diaz-Balart,MarioDB,R,37094727
+member,Matt Gaetz,RepMattGaetz,R,818948638890217473
+member,Michael Waltz,RepMichaelWaltz,R,1082416697380913152
+member,Neal Dunn,DrNealDunnFL2,R,815952318487298048
+member,Ross Spano,RepRossSpano,R,1090328229548826627
+member,Stephanie Murphy,RepStephMurphy,D,796183515998068736
+member,Ted Deutch,RepTedDeutch,D,137794015
+member,Ted Yoho,RepTedYoho,R,1071900114
+member,Val Demings,RepValDemings,D,798973032362606600
+member,Vern Buchanan,VernBuchanan,R,20467163
+member,Austin Scott,AustinScottGA08,R,234797704
+member,Barry Loudermilk,RepLoudermilk,R,2914163523
+member,Buddy Carter,RepBuddyCarter,R,2973870195
+member,David Scott,repdavidscott,D,168673083
+member,Doug Collins,RepDougCollins,R,1060487274
+member,Drew Ferguson,RepDrewFerguson,R,806583915012046854
+member,Hank Johnson,RepHankJohnson,D,24745957
+member,Jody Hice,CongressmanHice,R,2975091705
+member,Lucy McBath,replucymcbath,D,1082380458976051202
+member,Rick W. Allen,RepRickAllen,R,2964287128
+member,Rob Woodall,RepRobWoodall,R,2382685057
+member,Sanford Bishop,SanfordBishop,D,249410485
+member,Michael San Nicolas,GuamCongressman,D,346509049
+member,Ed Case,RepEdCase,D,1081350574589833221
+member,Tulsi Gabbard,TulsiPress,D,1064206014
+member,Abby Finkenauer,RepFinkenauer,D,1081256295469068288
+member,Cindy Axne,RepCindyAxne,D,1080865917377097728
+member,Dave Loebsack,daveloebsack,D,510516465
+member,Steve King,SteveKingIA,R,48117116
+member,Mike Simpson,CongMikeSimpson,R,76132891
+member,Russ Fulcher,RepRussFulcher,R,1078741899572240384
+member,Adam Kinzinger,RepKinzinger,R,219429281
+member,Bill Foster,RepBillFoster,D,1080509366
+member,Bobby Rush,RepBobbyRush,D,305216911
+member,Brad Schneider,RepSchneider,D,1071840474
+member,Cheri Bustos,RepCheri,D,1092979962
+member,Chuy Garcia,RepChuyGarcia,D,1082427779583541248
+member,Dan Lipinski,RepLipinski,D,1009269193
+member,Danny K. Davis,RepDannyDavis,D,789244177
+member,Darin LaHood,RepLaHood,R,3686482216
+member,Jan Schakowsky,janschakowsky,D,24195214
+member,John Shimkus,RepShimkus,R,15600527
+member,Lauren Underwood,RepUnderwood,D,1080539438508400642
+member,Mike Bost,RepBost,R,2964877294
+member,Mike Quigley,RepMikeQuigley,D,56864092
+member,Raja Krishnamoorthi,CongressmanRaja,D,814179031956488192
+member,Robin Kelly,RepRobinKelly,D,1339931490
+member,Rodney Davis,RodneyDavis,R,993153006
+member,Sean Casten,RepCasten,D,1083472286089396224
+member,Andre Carson,RepAndreCarson,D,199325935
+member,Greg Pence,RepGregPence,R,1082369392229400576
+member,Jackie Walorski,RepWalorski,R,1065995022
+member,Jim Baird,repjimbaird,R,1086316494450032640
+member,Jim Banks,RepJimBanks,R,816131319033950208
+member,Larry Bucshon,RepLarryBucshon,R,234812598
+member,Pete Visclosky,RepVisclosky,D,193872188
+member,Susan Brooks,SusanWBrooks,R,1074101017
+member,Trey Hollingsworth,RepTrey,R,811986281177772032
+member,Roger Marshall,RepMarshall,R,752364246218862592
+member,Ron Estes,RepRonEstes,R,854715071116849157
+member,Sharice Davids,repdavids,D,1080516116395499522
+member,Steve Watkins,Rep_Watkins,R,1080307235350241280
+member,Andy Barr,RepAndyBarr,R,1089334250
+member,Brett Guthrie,RepGuthrie,R,1908143071
+member,Hal Rogers,RepHalRogers,R,550401754
+member,James Comer,RepJamesComer,R,1274852794206388225
+member,John Yarmuth,RepJohnYarmuth,D,384913290
+member,Thomas Massie,RepThomasMassie,R,975200486
+member,Cedric Richmond,RepRichmond,D,267854863
+member,Clay Higgins,RepClayHiggins,R,843636970538618880
+member,Garret Graves,RepGarretGraves,R,2951574214
+member,Mike Johnson,RepMikeJohnson,R,827279765287559171
+member,Ralph Abraham,RepAbraham,R,2962891515
+member,Steve Scalise,SteveScalise,R,1209417007
+member,Ayanna Pressley,RepPressley,D,1080584229510172678
+member,Bill Keating,USRepKeating,D,232992031
+member,Jim McGovern,RepMcGovern,D,242426145
+member,Joseph Kennedy III,RepJoeKennedy,D,1055907624
+member,Katherine Clark,RepKClark,D,2293131060
+member,Lori Trahan,RepLoriTrahan,D,1079802482640019456
+member,Richard Neal,RepRichardNeal,D,442824717
+member,Seth Moulton,teammoulton,D,3091316093
+member,Stephen Lynch,RepStephenLynch,D,310310133
+member,Andy Harris,RepAndyHarrisMD,R,960962340
+member,Anthony G. Brown,RepAnthonyBrown,D,823552974253342721
+member,David Trone,repdavidtrone,D,1080573351914061825
+member,Dutch Ruppersberger,Call_Me_Dutch,D,305620929
+member,Jamie Raskin,RepRaskin,D,806906355214852096
+member,John Sarbanes,RepSarbanes,D,364415553
+member,Kweisi Mfume,RepKweisiMfume,D,1276209702322438148
+member,Steny Hoyer,LeaderHoyer,D,22012091
+member,Chellie Pingree,chelliepingree,D,14984637
+member,Jared Golden,repgolden,D,1080891667308298240
+member,Andy Levin,RepAndyLevin,D,1080277407867772930
+member,Bill Huizenga,RepHuizenga,R,233949261
+member,Brenda Lawrence,RepLawrence,D,2863006655
+member,Dan Kildee,RepDanKildee,D,1045110018
+member,Debbie Dingell,RepDebDingell,D,2970279814
+member,Elissa Slotkin,RepSlotkin,D,1078401427347857408
+member,Fred Upton,RepFredUpton,R,124224165
+member,Haley Stevens,RepHaleyStevens,D,1076161611033968640
+member,Jack Bergman,RepJackBergman,R,815241612154417152
+member,John Moolenaar,RepMoolenaar,R,2696643955
+member,Justin Amash,justinamash,L,233842454
+member,Justin Amash,amashoffice,L,774742130329812992
+member,Paul Mitchell,RepPaulMitchell,R,811632636598910976
+member,Rashida Tlaib,RepRashida,D,1079769536730140672
+member,Tim Walberg,RepWalberg,R,237862972
+member,Angie Craig,RepAngieCraig,D,1080222360643485698
+member,Betty McCollum,BettyMcCollum04,D,516880804
+member,Dean Phillips,RepDeanPhillips,D,1061310112013434882
+member,Ilhan Omar,Ilhan,D,1082334352711790593
+member,Jim Hagedorn,RepHagedorn,R,1083474782602125318
+member,Pete Stauber,RepPeteStauber,R,1075830599007510535
+member,Tom Emmer,RepTomEmmer,R,2914515430
+member,Ann Wagner,RepAnnWagner,R,1051446626
+member,Billy Long,USRepLong,R,1444015610
+member,Blaine Luetkemeyer,RepBlaine,R,1849261916
+member,Emanuel Cleaver,repcleaver,D,163570705
+member,Jason Smith,RepJasonSmith,R,1623308912
+member,Sam Graves,RepSamGraves,R,29766367
+member,Vicky Hartzler,RepHartzler,R,237763317
+member,Gregorio Sablan,Kilili_Sablan,D,926446070812602371
+member,Bennie Thompson,BennieGThompson,D,82453460
+member,Michael Guest,RepMichaelGuest,R,1081243468327018496
+member,Steven Palazzo,CongPalazzo,R,299883942
+member,Trent Kelly,RepTrentKelly,R,3317799825
+member,Greg Gianforte,gianforte,R,26574496
+member,Alma Adams,RepAdams,D,2916086925
+member,Dan Bishop,RepDanBishop,R,1176522535531360257
+member,David Price,RepDavidEPrice,D,155669457
+member,David Rouzer,RepDavidRouzer,R,834069080
+member,G.K. Butterfield,GKButterfield,D,432676344
+member,George Holding,RepHolding,R,1058460818
+member,Greg Murphy,RepGregMurphy,R,1173978070535024642
+member,Mark Walker,RepMarkWalker,R,2966205003
+member,Patrick McHenry,PatrickMcHenry,R,27676828
+member,Richard Hudson,RepRichHudson,R,935033864
+member,Ted Budd,RepTedBudd,R,817138492614524928
+member,Virginia Foxx,virginiafoxx,R,16256269
+member,Kelly Armstrong,RepArmstrongND,R,1080515866255593472
+member,Adrian Smith,RepAdrianSmith,R,296245061
+member,Don Bacon,RepDonBacon,R,818975124460335106
+member,Jeff Fortenberry,JeffFortenberry,R,18805303
+member,Annie Kuster,RepAnnieKuster,D,1058717720
+member,Chris Pappas,RepChrisPappas,D,1067748650485497862
+member,Albio Sires,RepSires,D,18696134
+member,Andy Kim,RepAndyKimNJ,D,1078771848882593793
+member,Bill Pascrell,BillPascrell,D,74508260
+member,Bonnie Watson Coleman,RepBonnie,D,2968451607
+member,Chris Smith,RepChrisSmith,R,1289319271
+member,Donald Norcross,DonaldNorcross,D,3122099613
+member,Donald Payne Jr,RepDonaldPayne,D,1155335864
+member,Frank Pallone,FrankPallone,D,31801993
+member,Jeff Van Drew,CongressmanJVD,R,1083469084648505344
+member,Josh Gottheimer,RepJoshG,D,815310506596691968
+member,Mikie Sherrill,RepSherrill,D,1080569698536878081
+member,Tom Malinowski,RepMalinowski,D,1080898026418384897
+member,Ben Ray Lujan,repbenraylujan,D,19318314
+member,Deb Haaland,RepDebHaaland,D,1080695666760929280
+member,Xochitl Torres Small,RepTorresSmall,D,1080830346915209216
+member,Dina Titus,repdinatitus,D,122174004
+member,Mark Amodei,MarkAmodeiNV2,R,402719755
+member,Steven Horsford,RepHorsford,D,389840566
+member,Susie Lee,RepSusieLee,D,1079061579973439488
+member,Adriano Espaillat,RepEspaillat,D,817076257770835968
+member,Alexandria Ocasio-Cortez,RepAOC,D,1079104563280527364
+member,Anthony Brindisi,RepBrindisi,D,1080978331535896576
+member,Antonio Delgado,repdelgado,D,1080485692298444800
+member,Brian Higgins,RepBrianHiggins,D,33576489
+member,Carolyn Maloney,RepMaloney,D,258900199
+member,Chris Jacobs,RepJacobs,R,1276232539510919168
+member,Eliot Engel,RepEliotEngel,D,164007407
+member,Elise Stefanik,RepStefanik,R,2962813893
+member,Grace Meng,RepGraceMeng,D,1051127714
+member,Gregory Meeks,RepGregoryMeeks,D,22812754
+member,Hakeem Jeffries,RepJeffries,D,467823431
+member,Jerrold Nadler,RepJerryNadler,D,40302336
+member,John Katko,RepJohnKatko,R,2966765501
+member,Jose E. Serrano,RepJoseSerrano,D,33563161
+member,Joseph Morelle,JoeMorelle,D,106787853
+member,Joseph Morelle,RepJoeMorelle,D,1064595993222615040
+member,Kathleen Rice,RepKathleenRice,D,2970462034
+member,Lee Zeldin,RepLeeZeldin,R,2750127259
+member,Max Rose,RepMaxRose,D,1078692057940742144
+member,Nita Lowey,NitaLowey,D,221792092
+member,Nydia Velazquez,NydiaVelazquez,D,164369297
+member,Paul Tonko,RepPaulTonko,D,84119348
+member,Peter T. King,RepPeteKing,R,18277655
+member,Sean Maloney,RepSeanMaloney,D,1072467470
+member,Thomas Suozzi,RepTomSuozzi,D,816705409486618624
+member,Tom Reed,RepTomReed,R,252819323
+member,Yvette Clarke,RepYvetteClarke,D,240812994
+member,Anthony Gonzalez,RepAGonzalez,R,1054381765224210432
+member,Bill Johnson,RepBillJohnson,R,211530910
+member,Bob Gibbs,RepBobGibbs,R,234822928
+member,Bob Latta,boblatta,R,15394954
+member,Brad Wenstrup,RepBradWenstrup,R,518644221
+member,David Joyce,RepDaveJoyce,R,976969338
+member,Jim Jordan,Jim_Jordan,R,18166778
+member,Joyce Beatty,RepBeatty,D,1531521632
+member,Marcia Fudge,RepMarciaFudge,D,153486399
+member,Marcy Kaptur,RepMarcyKaptur,D,581141508
+member,Mike Turner,RepMikeTurner,R,51228911
+member,Steve Chabot,RepSteveChabot,R,237750442
+member,Steve Stivers,RepSteveStivers,R,211420609
+member,Tim Ryan,RepTimRyan,D,13491312
+member,Troy Balderson,RepBalderson,R,1037341536592310272
+member,Warren Davidson,WarrenDavidson,R,742735530287304704
+member,Frank Lucas,RepFrankLucas,R,242772524
+member,Kendra Horn,RepKendraHorn,D,1083019402046513152
+member,Kevin Hern,repkevinhern,R,1067818539179024386
+member,Markwayne Mullin,RepMullin,R,1060370282
+member,Tom Cole,TomColeOK04,R,23124635
+member,Earl Blumenauer,BlumenauerMedia,D,137823987
+member,Greg Walden,repgregwalden,R,32010840
+member,Kurt Schrader,RepSchrader,D,20545793
+member,Peter DeFazio,RepPeterDeFazio,D,252249233
+member,Suzanne Bonamici,RepBonamici,D,558769636
+member,Brendan Boyle,CongBoyle,D,4304448314
+member,Brian Fitzpatrick,RepBrianFitz,R,816303263586914304
+member,Chrissy Houlahan,RepHoulahan,D,1052896620797460481
+member,Conor Lamb,RepConorLamb,D,984456621417000960
+member,Dan Meuser,RepMeuser,R,1080574793630527505
+member,Dwight Evans,RepDwightEvans,D,90639372
+member,Fred Keller,RepFredKeller,R,1136060761422405633
+member,Glenn Thompson,CongressmanGT,R,18967498
+member,Guy Reschenthaler,GReschenthaler,R,4205133682
+member,John Joyce,RepJohnJoyce,R,1082311988926124036
+member,Lloyd Smucker,RepSmucker,R,41417564
+member,Madeleine Dean,RepDean,D,567508925
+member,Mary Scanlon,RepMGS,D,1067541214671577093
+member,Matt Cartwright,RepCartwright,D,776664410
+member,Michael F. Doyle,USRepMikeDoyle,D,39249305
+member,Mike Kelly,MikeKellyPA,R,935368364
+member,Scott Perry,RepScottPerry,R,18773159
+member,Susan Wild,RepSusanWild,D,1069636653353000962
+member,Jenniffer Gonzalez,RepJenniffer,R,819744763020775425
+member,David Cicilline,RepCicilline,D,462143773
+member,Jim Langevin,JimLangevin,D,18909919
+member,Jeff Duncan,RepJeffDuncan,R,240393970
+member,Jim Clyburn,WhipClyburn,D,188019606
+member,Joe Cunningham,RepCunningham,D,1080198683713507335
+member,Joe Wilson,RepJoeWilson,R,254082173
+member,Ralph Norman,RepRalphNorman,R,880480631108644864
+member,Tom Rice,RepTomRice,R,1058345042
+member,William Timmons,reptimmons,R,1079770852302958592
+member,Dusty Johnson,RepDustyJohnson,R,1074782372594413569
+member,Chuck Fleischmann,RepChuck,R,235190657
+member,David Kustoff,repdavidkustoff,R,816012124505931780
+member,Jim Cooper,repjimcooper,D,22523087
+member,John Rose,RepJohnRose,R,1081312310059253763
+member,Mark Green,RepMarkGreen,R,1080477288955826176
+member,Phil Roe,DrPhilRoe,R,52503751
+member,Scott DesJarlais,DesJarlaisTN04,R,235312723
+member,Steve Cohen,RepCohen,D,162069635
+member,Tim Burchett,RepTimBurchett,R,1028854804087492613
+member,Al Green,RepAlGreen,D,156333623
+member,Al Green,RepAlGreenTX,D,327625079
+member,Bill Flores,RealBillFlores,R,237312687
+member,Brian Babin,RepBrianBabin,R,2929491549
+member,Chip Roy,RepChipRoy,R,1082790600292925440
+member,Colin Allred,RepColinAllred,D,1078355119920562176
+member,Dan Crenshaw,RepDanCrenshaw,R,1080894931311431682
+member,Eddie Bernice Johnson,RepEBJ,D,168502762
+member,Filemon Vela,RepFilemonVela,D,1083448909
+member,Henry Cuellar,RepCuellar,D,210926192
+member,Joaquin Castro,JoaquinCastrotx,D,231510077
+member,Jodey Arrington,RepArrington,R,816284664658874368
+member,John Carter,JudgeCarter,R,18030431
+member,Kay Granger,RepKayGranger,R,161743731
+member,Kenny Marchant,RepKenMarchant,R,23976316
+member,Kevin Brady,RepKevinBrady,R,19926675
+member,Lance Gooden,RepLanceGooden,R,412595957
+member,Lizzie Fletcher,RepFletcher,D,1075904377221722113
+member,Lloyd Doggett,RepLloydDoggett,D,153944899
+member,Louie Gohmert,replouiegohmert,R,22055226
+member,Mac Thornberry,MacTXPress,R,377534571
+member,Mark Veasey,RepVeasey,D,1074129612
+member,Michael C. Burgess,michaelcburgess,R,15751083
+member,Michael Cloud,RepCloudTX,R,1039879658400112640
+member,Michael McCaul,RepMcCaul,R,26424123
+member,Mike Conaway,ConawayTX11,R,295685416
+member,Pete Olson,RepPeteOlson,R,20053279
+member,Randy Weber,TXRandy14,R,1058051748
+member,Roger Williams,RepRWilliams,R,1077446982
+member,Ron Wright,RepRonWright,R,1080854935535800320
+member,Sheila Jackson Lee,JacksonLeeTX18,D,80612021
+member,Sylvia Garcia,RepSylviaGarcia,D,1080587263132733442
+member,Van Taylor,RepVanTaylor,R,1075040139351597056
+member,Veronica Escobar,RepEscobar,D,1075517806551154689
+member,Vicente Gonzalez,RepGonzalez,D,818536152588238849
+member,Will Hurd,HurdOnTheHill,R,2963445730
+member,Ben McAdams,RepBenMcAdams,D,196362083
+member,Chris Stewart,RepChrisStewart,R,1072008757
+member,John Curtis,RepJohnCurtis,R,931614483050414080
+member,Rob Bishop,RepRobBishop,R,148006729
+member,Abigail Spanberger,RepSpanberger,D,1078771401497161728
+member,Ben Cline,RepBenCline,R,1072158357237174272
+member,Bobby Scott,BobbyScott,D,161791703
+member,Denver Riggleman,RepRiggleman,R,1080504024695222273
+member,Don Beyer,RepDonBeyer,D,2962868158
+member,Donald McEachin,RepMcEachin,D,816181091673448448
+member,Elaine Luria,RepElaineLuria,D,1080292515939565568
+member,Gerry Connolly,GerryConnolly,D,78445977
+member,Jennifer Wexton,RepWexton,D,1017819745880543238
+member,Morgan Griffith,RepMGriffith,R,234057152
+member,Rob Wittman,RobWittman,R,15356407
+member,Stacey Plaskett,StaceyPlaskett,D,2724095695
+member,Peter Welch,PeterWelch,D,1410590874
+member,Adam Smith,RepAdamSmith,D,58928690
+member,Cathy McMorris Rodgers,cathymcmorris,R,17976923
+member,Dan Newhouse,RepNewhouse,R,2930635215
+member,Denny Heck,RepDennyHeck,D,1068499286
+member,Derek Kilmer,RepDerekKilmer,D,1058917562
+member,Jaime Herrera Beutler,HerreraBeutler,R,242926427
+member,Kim Schrier,RepKimSchrier,D,1080462532815532032
+member,Pramila Jayapal,RepJayapal,D,815733290955112448
+member,Rick Larsen,RepRickLarsen,D,404132211
+member,Suzan DelBene,RepDelBene,D,995193054
+member,Bryan Steil,RepBryanSteil,R,1075205691621720064
+member,Glenn Grothman,RepGrothman,R,2976606250
+member,Gwen Moore,RepGwenMoore,D,22669526
+member,Jim Sensenbrenner,JimPressOffice,R,851621377
+member,Mark Pocan,repmarkpocan,D,1206227149
+member,Mike Gallagher,RepGallagher,R,815966620300480514
+member,Ron Kind,RepRonKind,D,112740986
+member,Alex Mooney,RepAlexMooney,R,2964526557
+member,Carol Miller,RepCarolMiller,R,1081318716573470720
+member,David McKinley,RepMcKinley,R,240427862
+member,Liz Cheney,RepLizCheney,R,816719802328715264
+party,House Democrats,dccc,D,14676022
+party,House Democrats,HouseDemocrats,D,43963249
+party,House Democrats,DemCloakroom,D,2557507771
+party,House Democrats,HouseDPCC,D,3027286779
+party,House Republicans,NRCC,R,5496932
+party,House Republicans,GOPpolicy,R,10840862
+party,House Republicans,HouseGOP,R,15207668
+party,House Republicans,RepCloakroom,R,1137600571
+party,House Republicans,GOPEspanol,R,1138688364
+committee,Joint Economic Committee,JECRepublicans,R,109280446
+committee,Joint Economic Committee,JECDems,D,116505994
+caucus,Senate Western Caucus,SenWestCaucus,R,432854654
+committee,"Senate Committee on Agriculture, Nutrition, and Forestry",SenateAgDems,D,233696188
+committee,"Senate Committee on Agriculture, Nutrition, and Forestry",SenateAgGOP,R,3006258669
+committee,Senate Committee on Appropriations,SenateApprops,D,352534407
+committee,Senate Committee on Armed Services,SASCMajority,R,275572403
+committee,Senate Committee on Armed Services,SASCDems,D,2863228577
+committee,"Senate Committee on Banking, Housing, and Urban Affairs",SenateBanking,D,104324860
+committee,"Senate Committee on Banking, Housing, and Urban Affairs",BankingGOP,R,1242040290
+committee,"Senate Committee on Commerce, Science, and Transportation",SenateCommerce,R,386092483
+committee,"Senate Committee on Commerce, Science, and Transportation",commercedems,D,1097141276552630272
+committee,Senate Committee on Energy and Natural Resources,EnergyGOP,R,82657929
+committee,Senate Committee on Energy and Natural Resources,EnergyDems,D,277124730
+committee,Senate Committee on Environment and Public Works,EPWDems,D,245891006
+committee,Senate Committee on Environment and Public Works,EPWGOP,R,1055515873
+committee,Senate Committee on Finance,SenateFinance,D,628709039
+committee,Senate Committee on Finance,SenFinance,R,701821488
+committee,"Senate Committee on Health, Education, Labor, and Pensions",GOPHELP,R,292972175
+committee,"Senate Committee on Health, Education, Labor, and Pensions",HELPCmteDems,D,1262362578
+committee,Senate Committee on Indian Affairs,IndianCommittee,R,329761746
+committee,Senate Committee on Small Business and Entrepreneurship,SenateSmallBiz,D,2654291262
+committee,Senate Committee on Small Business and Entrepreneurship,SmallBizCmte,R,2932401927
+committee,Senate Committee on Veterans' Affairs,senateva,R,1009054656
+committee,Senate Committee on the Budget,SenateBudget,D,172470598
+committee,Senate Committee on the Budget,BudgetGOP,R,2992440550
+committee,Senate Committee on the Judiciary,senjudiciary,R,704320143824953344
+committee,Senate Committee on the Judiciary,JudiciaryDems,D,818513652814843906
+committee,Senate Special Committee on Aging,SenateAging,R,2359937696
+committee,Senate Special Committee on Aging,DemsOnAging,D,824712291669118980
+member,Dan Sullivan,SenDanSullivan,R,2891210047
+member,Lisa Murkowski,lisamurkowski,R,18061669
+member,Doug Jones,SenDougJones,D,941080085121175552
+member,Richard Shelby,SenShelby,R,21111098
+member,John Boozman,JohnBoozman,R,5558312
+member,Tom Cotton,SenTomCotton,R,968650362
+member,Kyrsten Sinema,SenatorSinema,D,1080844782
+member,Mark Kelly,SenMarkKelly,D,1324926274888888320
+member,Dianne Feinstein,SenFeinstein,D,476256944
+member,Kamala Harris,SenKamalaHarris,D,803694179079458816
+member,Cory Gardner,SenCoryGardner,R,235217558
+member,Michael Bennet,SenatorBennet,D,224285242
+member,Chris Murphy,SenMurphyOffice,D,2853793517
+member,Richard Blumenthal,SenBlumenthal,D,278124059
+member,Chris Coons,SenCoonsOffice,D,435500714
+member,Tom Carper,SenatorCarper,D,249787913
+member,Marco Rubio,SenRubioPress,R,229966028
+member,Rick Scott,SenRickScott,R,131546062
+member,David Perdue,sendavidperdue,R,2863210809
+member,Kelly Loeffler,SenatorLoeffler,R,1200451909406121984
+member,Brian Schatz,SenBrianSchatz,D,1262099252
+member,Mazie Hirono,maziehirono,D,92186819
+member,Chuck Grassley,ChuckGrassley,R,10615232
+member,Chuck Grassley,GrassleyPress,R,294126378
+member,Joni Ernst,SenJoniErnst,R,2856787757
+member,Jim Risch,SenatorRisch,R,1096059529
+member,Mike Crapo,MikeCrapo,R,600463589
+member,Dick Durbin,SenatorDurbin,D,247334603
+member,Tammy Duckworth,SenDuckworth,D,1058520120
+member,Mike Braun,SenatorBraun,R,1080870981877534720
+member,Todd Young,SenToddYoung,R,234128524
+member,Jerry Moran,JerryMoran,R,18632666
+member,Pat Roberts,SenPatRoberts,R,75364211
+member,Mitch McConnell,SRCC,R,19029580
+member,Mitch McConnell,McConnellPress,R,339822881
+member,Mitch McConnell,SenateMajLdr,R,1249982359
+member,Rand Paul,RandPaul,R,216881337
+member,Bill Cassidy,SenBillCassidy,R,1017500185356853248
+member,John Kennedy,SenJohnKennedy,R,816683274076614656
+member,Ed Markey,SenMarkey,D,21406834
+member,Elizabeth Warren,SenWarren,D,970207298
+member,Ben Cardin,SenatorCardin,D,109071031
+member,Chris Van Hollen,ChrisVanHollen,D,18137749
+member,Angus King,SenAngusKing,I,1068481578
+member,Susan Collins,SenatorCollins,R,19726613
+member,Debbie Stabenow,SenStabenow,D,76456274
+member,Gary Peters,SenGaryPeters,D,236511574
+member,Amy Klobuchar,SenAmyKlobuchar,D,22044727
+member,Tina Smith,SenTinaSmith,D,941000686275387392
+member,Josh Hawley,SenHawleyPress,R,1080960924687704064
+member,Roy Blunt,RoyBlunt,R,21269970
+member,Roy Blunt,RoyBluntPress,R,238177562
+member,Cindy Hyde-Smith,SenHydeSmith,R,983348251972816896
+member,Roger Wicker,SenatorWicker,R,264219447
+member,Jon Tester,SenatorTester,D,515822213
+member,Steve Daines,SteveDaines,R,11651202
+member,Richard Burr,SenatorBurr,R,21157904
+member,Thom Tillis,SenThomTillis,R,2964174789
+member,John Hoeven,SenJohnHoeven,R,382791093
+member,Kevin Cramer,SenKevinCramer,R,1048784496
+member,Ben Sasse,SenSasse,R,2962923040
+member,Deb Fischer,SenatorFischer,R,1071402577
+member,Jeanne Shaheen,SenatorShaheen,D,109287731
+member,Maggie Hassan,SenatorHassan,D,946549322
+member,Bob Menendez,SenatorMenendez,D,18695134
+member,Cory Booker,SenBooker,D,2167097881
+member,Martin Heinrich,MartinHeinrich,D,1099199839
+member,Tom Udall,SenatorTomUdall,D,60828944
+member,Catherine Cortez Masto,SenCortezMasto,D,811313565760163844
+member,Jacky Rosen,SenJackyRosen,D,818554054309715969
+member,Chuck Schumer,SenSchumer,D,17494010
+member,Kirsten Gillibrand,gillibrandny,D,899978622416695297
+member,Rob Portman,senrobportman,R,18915145
+member,Rob Portman,PortmanPress,R,240790556
+member,Sherrod Brown,SenSherrodBrown,D,43910797
+member,James Lankford,SenatorLankford,R,225921757
+member,Jim Inhofe,JimInhofe,R,7270292
+member,Jim Inhofe,InhofePress,R,20546536
+member,Jeff Merkley,SenJeffMerkley,D,29201047
+member,Ron Wyden,RonWyden,D,250188760
+member,Ron Wyden,WydenPress,D,292495654
+member,Bob Casey Jr.,SenBobCasey,D,171598736
+member,Pat Toomey,SenToomey,R,221162525
+member,Jack Reed,SenJackReed,D,486694111
+member,Sheldon Whitehouse,SenWhitehouse,D,242555999
+member,Lindsey Graham,GrahamBlog,R,14845376
+member,Tim Scott,SenatorTimScott,R,217543151
+member,John Thune,SenJohnThune,R,296361085
+member,Mike Rounds,SenatorRounds,R,2955485182
+member,Lamar Alexander,SenAlexander,R,76649729
+member,Marsha Blackburn,MarshaBlackburn,R,278145569
+member,John Cornyn,JohnCornyn,R,13218102
+member,Ted Cruz,SenTedCruz,R,1074480192
+member,Mike Lee,SenMikeLee,R,88784440
+member,Mitt Romney,SenatorRomney,R,1078693601356509184
+member,Mark Warner,MarkWarner,D,7429102
+member,Tim Kaine,timkaine,D,172858784
+member,Tim Kaine,SenKaineOffice,D,1267940407
+member,Bernie Sanders,SenSanders,I,29442313
+member,Patrick Leahy,SenatorLeahy,D,242836537
+member,Maria Cantwell,SenatorCantwell,D,117501995
+member,Patty Murray,PattyMurray,D,293131808
+member,Ron Johnson,SenRonJohnson,R,233737858
+member,Tammy Baldwin,SenatorBaldwin,D,1074518754
+member,Joe Manchin,Sen_JoeManchin,D,234374703
+member,Shelley Moore Capito,SenCapito,R,193794406
+member,John Barrasso,SenJohnBarrasso,R,202206694
+member,Mike Enzi,SenatorEnzi,R,291756142
+party,Senate Democrats,dscc,D,14466538
+party,Senate Democrats,SenateDems,D,73238146
+party,Senate Democrats,DSenFloor,D,729177876
+party,Senate Democrats,SenDemsClimate,D,1148973240355827713
+party,Senate Republicans,NRSC,R,5693842
+party,Senate Republicans,SenateGOP,R,14344823
+party,Senate Republicans,SenateRPC,R,114896223
+party,Senate Republicans,senategopfloor,R,476209692
