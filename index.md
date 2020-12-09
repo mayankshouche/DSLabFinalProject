@@ -2,6 +2,25 @@
 
 In this project, we wanted to examine various NLP techniques to analyze tweets about the 2020 election. The primary areas we explored were topic modeling and tweet classification by political party leaning, but we simultaneously looked into sub-problems within these. For example, we compared datasets of differing sizes to examine the impact of training set size on often noisy language data, like tweets, which often have words not common in a lot of training corpuses. We also examine the location distribution of Twitter users who support one party or another. 
 
+
+# Data Collection
+
+## Overview
+Our team used political tweet datasets, election tweet datasets, and Tweet feeds for well known politicians for our tasks to gain insights from the areas we wanted to explore. 
+
+## Tweet Party Leaning Classification
+We relied on Twitter feed archives for committees, caucuses, parties, and members of Congress to form our dataset. We then were able to add a party label to the each of the tweets based on the political leaning of the respective committee, caucus, party, or member. This allowed us to find a labeled dataset of political Tweets from the year of 2020 of size 500,000. We initially mined other kaggle datasets for tweets from a certain subset of political figures, which caused severe limitiation in data size, so this dataset creation from scratch was key. We will go over how we created our text corpus.
+
+Our first step was to get social feeds of Tweets from political entities of congress from, https://github.com/alexlitel/congresstweets/tree/master/data. 
+
+https://alexlitel.github.io/congresstweets/
+
+## Topic Modeling
+
+## Election Results Predicting
+
+
+
 # Topic Modeling
 
 ## Overview
