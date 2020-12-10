@@ -314,3 +314,14 @@ In the figure above, our dataset of election results by state is sorted by the s
 The figure above shows the states with the most Democratic tweets. Comparing these to the actual election results, we can see that Biden won each state shown.
 
 In conclusion, by applying our BERT model to a dataset of tweets and filtering each tweet by its location, we were able to recreate the 2020 US Presidential Election through Twitter. While the results were ultimately overwhelmingly Democratic, this was to be expected given Twitter's demographic, but Republican states were still well represented by higher ratios of Republican tweets.
+
+
+# Conclusion
+
+Throughout the course of this project, we had the chance to learn many skills in the NLP domain, such as topic modeling through various methods like LDA, fine-tuning language models on downstream tasks, among others. We also had to do a lot of data collection, which presented it's own challenges such as integrating with the Twitter API and respecting its rate limits. Furthermore, using libraries like Ray Tune for hyperparameter tuning allowed us to learn about modern methods for intelligently optimizing hyperparameters of deep learning models.  
+
+One of the successes of this project was that we were able to create a novel labeled dataset for our task, gathering over 500,000 entries, which is comparable to the larger datasets in the GLUE benchmark, a classic NLP metric. We also managed to train multiple models into the .9+ AUC range and acheive accuracies in the high 80 percents, which indicates that we were successfully able to train accurate classifiers for broad political tweets.
+
+In the future, given more time, we would like to try more complex models, such as an XGBoost model that can take into account BERT embeddings as well as tweet metadata, like hashtags. We would also like to fine-tune our election analysis to look at electoral districts as opposed to full states.
+
+Ultimately, we were able to achieve most of our goals for this project, and managed to show useful insights regarding analysis of tweets using NLP methods as well as regarding the political distribution of Twitter in the US.
