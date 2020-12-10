@@ -280,6 +280,19 @@ Our first approach to fine-tune BERT Sequence Classification was to freeze the B
 
 ![]
 
+# Interesting Results from Labeled Tweets
+
+Using our trained model, we were now able to predict whether a tweet leaned Republican or Democrat. Below we display a selection of our results.
+
+![](images/2020-12-09-23-41-53.png)
+
+The tweet above is mislabeled as Republican, when it is mostly likely Democratic leaning in reality. While this is a negative result, the tweet itself contains many misleading terms such as "best heroes" and "Donald Trump" which led the model to predict Republican.
+
+![](images/2020-12-09-23-44-28.png)
+![](images/2020-12-09-23-49-10.png)
+![](images/2020-12-09-23-48-00.png)
+
+The above tweets were all labeled correctly. Here we get an illustration of the success of our model and its ability to understand terms that relate to Republicans and Democrats respectively. For example, the model was able to recognize terms such as "Make America great again" as Republican, and attacks such as "trump is a fascist" as Democratic.
 
 # Election Predictions
 
