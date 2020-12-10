@@ -1,18 +1,24 @@
 # Introduction
 
-In this project, we wanted to examine various NLP techniques to analyze tweets about both the 2020 election and U.S. politics in general. The primary areas we explored were topic modeling and tweet classification by political party leaning, but we simultaneously looked into sub-problems within these. For example, we compared models trained on differently sized subsets of our data to examine the impact of training set size on often noisy language data, like tweets, which often have words not common in a lot of training corpuses. We also examine the location distribution of Twitter users who support one party or another. 
+In this project, we wanted to examine various NLP techniques to analyze tweets about the 2020 election. The primary areas we explored were topic modeling and tweet classification by political party leaning, but we simultaneously looked into sub-problems within these. For example, we compared datasets of differing sizes to examine the impact of training set size on often noisy language data, like tweets, which often have words not common in a lot of training corpuses. We also examine the location distribution of Twitter users who support one party or another. 
 
 
+# Data Collection
 
 ## Overview
-Our team used political tweet datasets, election tweet datasets, and Tweet feeds for well known politicians for our tasks to gain insights from the areas we wanted to explore. 
+Our team used political tweet datasets, election tweet datasets, and Tweet feeds for well known politicians for our tasks to gain insights from the areas we wanted to explore. Our very first version of the dataset were tweets from hand selected Democrats and Republicans on Twitter that we would mine from election datasets. However, as we went further in the project, we were introduced better APIs and archives that allowed us to get more structured data. As most of the Twitter contain the IDs and omit the other information for privacy purposes, we were required to use the Twitter API in conjunction with Hydrator to retrieve the full tweet.
 
-## Tweet Party Leaning Classification
-We relied on Twitter feed archives for committees, caucuses, parties, and members of Congress to form our dataset. We then were able to add a party label to the each of the tweets based on the political leaning of the respective committee, caucus, party, or member. This allowed us to find a labeled dataset of political Tweets from the year of 2020 of size 500,000. We initially mined other kaggle datasets for tweets from a certain subset of political figures, which caused severe limitiation in data size, so this dataset creation from scratch was key. We will go over how we created our text corpus.
+## Dataset for 2020 Election Tweets
+Our very first dataset was nearly 2000 tweets that we extracted from the IEEE 2020 political election dataset. We indexed each of our hand selected users' ids into the dataset to get tweets from the users. We then hydrated the tweets using Hydrator to create our final dataset.
 
-Our first step was to get social feeds of Tweets from political entities of congress from, https://github.com/alexlitel/congresstweets/tree/master/data. 
+## Dataset for 2020 Tweets from Congressional Entities
+We relied on Twitter feed archives for committees, caucuses, parties, and members of Congress to form our 2020 political tweets dataset. We then were able to add a party label to the each of the tweets based on the political leaning of the respective committee, caucus, party, or member. This allowed us to find a labeled dataset of political Tweets from the year of 2020 of size 500,000, which allowed us to try more complex models to solve party classification from tweets. 
 
-https://alexlitel.github.io/congresstweets/
+We got the archives of all political tweets from this link https://github.com/alexlitel/congresstweets/tree/master/data., which has all tweets by date in JSON format. We got the twitter information and party leaning of each of the political members from this link, https://alexlitel.github.io/congresstweets/, in JSON format. We then combined the two to create a dataset that has tweet labled by party.
+
+## Random Sampling of Political Tweets from Users across the United States
+
+Our first step was to get social feeds of Tweets from political entities of congress from, 
 
 
 ## Topic Modeling of Election Tweets
@@ -86,6 +92,7 @@ Some interesting hashtags that the WordCloud caught onto ActOnClimate, FamiliesF
 
 #### Democratic Mentions
 We see that Democrats are more likely to retweet HouseDemocrats, as well as other democratic congressmen and congresswomen.
+
 
 
 
