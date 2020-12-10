@@ -287,7 +287,7 @@ We decided to take a go at fine-tuning the whole BERT Sequence Classification mo
 This shows that BERT was able to find patterns that help distinguish Democratic tweets from Republican tweets, vice versa, very well when given more data. This may be because the variance of the model greatly decreased when we fed it large samples of data. It may be that the model is deep enough to learn more complex patterns when given more data points to learn from.
 
 ## Further Analysis of Results
-One problem we observed with our problem design is that the training corpus has the same users as the testing corpus. Thus, the model may be learning tweet characteristics of specific groups of users to educate its predictions. However, there 
+One problem we observed with our problem design is that the training corpus has the same users as the testing corpus. Thus, the model may be learning tweet characteristics of specific groups of users to educate its predictions. However, there is also a chance that the model is picking up on word patterns of different groups of people. A future plan is to dive deeper into the weights of the model and find out the significance of each. Another plan is to see is making sure user ids in the training corpora are not in the test corpora. 
 
 # Interesting Results from Labeled Tweets
 
