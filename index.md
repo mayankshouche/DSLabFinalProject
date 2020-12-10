@@ -230,7 +230,15 @@ With these hyperparameters, we found that the AUC to steadily increase as the da
 
 As shown above, it seems that BERT is able to produce accurate sentence embeddings that have a good level of linear seperability that can be learned to a significant level by logistic regression, even more so with larger datasets. These results are extremely promissing, as we have found a way to accurately categorize political tweets as Democratic and Republican, just from the content of the tweet itself. This is extremely promising and useful, as these models can be used to help predict election results, which we will explore and discuss in the next section.
 
+# Classification with Very Big Dataset
+This section covers our efforts to train the BERT sequence classification model with a larger text corpus of nearly 150,000 entries. Our findings were that training on a larger corpus yielded better classification on the validation set in comparison to training on a smaller dataset. We will detail the steps we tried when fine-tuning with a large dataset.
 
+## Fine-tuning BERT Sequence Classification with Frozen BERT weights
+Our first approach to fine-tune BERT Sequence Classification was to freeze the BERT weights simply because training would take too long. We thus tried this approach of only modifying the weights of the the logistic regression classifier on top of BERT to get the following results:
+
+
+
+![]
 
 ## Other Classifiers and Approaches
 
