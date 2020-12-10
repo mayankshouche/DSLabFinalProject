@@ -14,11 +14,11 @@ Our very first dataset was nearly 2000 tweets that we extracted from the IEEE 20
 ## Dataset for 2020 Tweets from Congressional Entities
 We relied on Twitter feed archives for committees, caucuses, parties, and members of Congress to form our 2020 political tweets dataset. We then were able to add a party label to the each of the tweets based on the political leaning of the respective committee, caucus, party, or member. This allowed us to find a labeled dataset of political Tweets from the year of 2020 of size 500,000, which allowed us to try more complex models to solve party classification from tweets. 
 
-We got the archives of all political tweets from this link https://github.com/alexlitel/congresstweets/tree/master/data., which has all tweets by date in JSON format. We got the twitter information and party leaning of each of the political members from this link, https://alexlitel.github.io/congresstweets/, in JSON format. We then combined the two to create a dataset that has tweet labled by party.
+We got the archives of all political tweets from this link https://github.com/alexlitel/congresstweets/tree/master/data., which has all tweets by date in JSON format. We got the twitter information and party leaning of each of the political members from this link, https://alexlitel.github.io/congresstweets/, in JSON format. We then combined the two to create a dataset that has tweet labled by party. Our final combined dataset looked like this:
+![]
 
 ## Random Sampling of Political Tweets from Users across the United States
 
-Our first step was to get social feeds of Tweets from political entities of congress from, 
 
 
 ## Topic Modeling of Election Tweets
@@ -60,11 +60,12 @@ In conclusion, utilizing NLP to filter the content of tweets allowed us to extra
 
 ## Topic Modeling of 2020 Politicians Tweets
 
-Our team wanted to see what the most important topics that Congressional entitities tweet about per party and as a whole, and to see what phrases are used more. Combining topic modeling with sentiment analysis and other analysis tools, we can learn a lot about the current political atmosphere.
+Our team wanted to see what the most important topics that Congressional entitities tweet about per party and as a whole, and to see what phrases are used more. Combining topic modeling with sentiment analysis and other analysis tools, we can learn a lot about the current political atmosphere. From our topic modeling of 2020 politician tweets, we help machine learning models have context of a tweet to help classify what party a tweet leans towards.
 
 ### Topics Mined By LDA
 We used TFIDF and LDA to generate the top 10 topics that politicians tweeted about in the year 2020 and we got the following. 
 
+![]
 
 As we can see from the image, there is a clear division in the topics. Furthermore, our topic model was able to catch that coronavirus  has had a strong impact on many topics, ranging from jobs, health care, school, businesses, as it is mentioned in those topics. 
 
@@ -76,27 +77,25 @@ We can see here that Republicans are more likely to tweet about the protection p
 
 #### Republican Hashtags
 We see here that Covid19 is the biggest as well as PaycheckProtectionProgram. What is interesting is that Republicans have hashtags about veterans, oil companies, foreign polity, etc.
-
+![]
 
 #### Republican Mentions
 We see here that Republicans mention realDonaldTrump disproportionately more than other posts. This is because members of the same party often retweet each others posts to commend their successes. Furthermore, as expected, we see that Republicans often mentioned other republicans in their tweets. 
+![]
 
 ### WordCloud (Top n-grams) For Democratic Tweets, Hashtags, and Mentions
 
 #### Democratic Tweets
 We see that Democrats tweet about health care, public health, the trump administration, and small busineses the most. What is interesting is that Democrats on twitter say "Trump Administration", which carries somewhat of a negative connotation, much more often than Republicans. 
+![]
 
 #### Democratic Hashtags
 Some interesting hashtags that the WordCloud caught onto ActOnClimate, FamiliesFirst, Juneteenth, ClimateChange, ClimateCrisis, ProtectOurCare, and more that are well known to fall under the liberal spectrum.
-
+!{]
 
 #### Democratic Mentions
 We see that Democrats are more likely to retweet HouseDemocrats, as well as other democratic congressmen and congresswomen.
-
-
-
-
-
+![]
 
 
 # Classification With a Small Dataset
@@ -188,40 +187,6 @@ We then identified trials 1 and 4 as promising, and evaluated both on the same 8
 | **Batch size**    | **Epochs**        | **Learning rate** |
 | :----: | :----: | :----:
 | 16 | 2 | 2e-5 | 
-
-## Classification with Big Dataset
-## Overview
-This section covers our efforts to create a classification model for a large version of our dataset focusing on the 2020 election. In this dataset, we had over 500,000 tweets, which is significantly larger than our small dataset, and we our goal was to find out whether BERT could learn an accurate way to produce classifiable embeddings.
-
-## Procedure
-To run BERT on the large dataset, we utilized the same techniques as we did for the small dataset. 
-
-We preformed the same data cleaning techniques and initialized BERT in the same way. Likewise, as with the small dataset, we employed our custom script that used Ray Tune directly, along with [ASHA](https://arxiv.org/pdf/1810.05934.pdf) scheduling and the HyperOpt search algorithm. Similarly, we also made sure to implement cross-validation with `sklearn`'s `StratifiedKFolds` to ensure we didn't pick our best parameters from a drop in loss by chance.
-
-We found that this large dataset was too big for Google CoLab's GPU to handle, as it would take an excessive amount of time, causing timeouts in our sessions, and even cause errors and failures while running. To combat these obstacles, we broke down our large dataset into smaller datasets of sizes 5k tweets, 10k tweets, and 50k tweets and analyzed those. In addition, we broke it down into smaller datasets to track the improvement of AUC as our dataset increased.
-
-For each of these subsets, like before, we then tried just tuning over `lr`, `batch_size`, and `epochs`, as these were the only three parameters explicitly mentioned for fine-tuning in appendix A.3 of the [BERT Paper](https://arxiv.org/pdf/1810.04805.pdf). 
-
-For reference, here's the configurations that we used to hyperparameterize our models.
-
-```python
-config = {
-    "lr": tune.choice([5e-5, 3e-5, 1e-5, 2e-5]),
-    "batch_size": tune.choice([8, 16, 32]),
-    "epochs": tune.choice([2, 3, 4])
-}
-```
-
-To find the best parameters, we ran 8 experiments for each of the three subsets. For each subset, 5k, 10k, and 50k tweets, we identified the models that had hyperparameters with the highest AUC values and evaluated them on the same 85/15 train-test split. We found the following parameters to be the most optimal for all three:
-
-| **Batch size**    | **Epochs**        | **Learning rate** |
-| :----: | :----: | :----:
-| 8 | 3 | 2e-5 | 
-
-With these hyperparameters, we found that the AUC to steadily increase as the dataset size increased. We found the optimal AUC on the test sets with these hyperparameters to be: 0.8849032763385403, 0.9227300126640381, 0.938660206530352 for the 5k, 10k, and 50k sets respectively. The graph below illustrates the increase in AUC score with respect to dataset size.
-
-![AUC Score](images/auc_graph.PNG)
-
 
 ## Other Classifiers
 
