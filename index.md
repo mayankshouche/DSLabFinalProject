@@ -189,6 +189,40 @@ We then identified trials 1 and 4 as promising, and evaluated both on the same 8
 | :----: | :----: | :----:
 | 16 | 2 | 2e-5 | 
 
+## Classification with Big Dataset
+## Overview
+This section covers our efforts to create a classification model for a large version of our dataset focusing on the 2020 election. In this dataset, we had over 500,000 tweets, which is significantly larger than our small dataset, and we our goal was to find out whether BERT could learn an accurate way to produce classifiable embeddings.
+
+## Procedure
+To run BERT on the large dataset, we utilized the same techniques as we did for the small dataset. 
+
+We preformed the same data cleaning techniques and initialized BERT in the same way. Likewise, as with the small dataset, we employed our custom script that used Ray Tune directly, along with [ASHA](https://arxiv.org/pdf/1810.05934.pdf) scheduling and the HyperOpt search algorithm. Similarly, we also made sure to implement cross-validation with `sklearn`'s `StratifiedKFolds` to ensure we didn't pick our best parameters from a drop in loss by chance.
+
+We found that this large dataset was too big for Google CoLab's GPU to handle, as it would take an excessive amount of time, causing timeouts in our sessions, and even cause errors and failures while running. To combat these obstacles, we broke down our large dataset into smaller datasets of sizes 5k tweets, 10k tweets, and 50k tweets and analyzed those. In addition, we broke it down into smaller datasets to track the improvement of AUC as our dataset increased.
+
+For each of these subsets, like before, we then tried just tuning over `lr`, `batch_size`, and `epochs`, as these were the only three parameters explicitly mentioned for fine-tuning in appendix A.3 of the [BERT Paper](https://arxiv.org/pdf/1810.04805.pdf). 
+
+For reference, here's the configurations that we used to hyperparameterize our models.
+
+```python
+config = {
+    "lr": tune.choice([5e-5, 3e-5, 1e-5, 2e-5]),
+    "batch_size": tune.choice([8, 16, 32]),
+    "epochs": tune.choice([2, 3, 4])
+}
+```
+
+To find the best parameters, we ran 8 experiments for each of the three subsets. For each subset, 5k, 10k, and 50k tweets, we identified the models that had hyperparameters with the highest AUC values and evaluated them on the same 85/15 train-test split. We found the following parameters to be the most optimal for all three:
+
+| **Batch size**    | **Epochs**        | **Learning rate** |
+| :----: | :----: | :----:
+| 8 | 3 | 2e-5 | 
+
+With these hyperparameters, we found that the AUC to steadily increase as the dataset size increased. We found the optimal AUC on the test sets with these hyperparameters to be: 0.8849032763385403, 0.9227300126640381, 0.938660206530352 for the 5k, 10k, and 50k sets respectively. The graph below illustrates the increase in AUC score with respect to dataset size.
+
+![AUC Score](images/auc_graph.PNG)
+
+
 ## Other Classifiers
 
 We thought that in case the embeddings from BERT happened to not be linearly seperable, we could attempt to use non-linear models to classify the BERT embeddings. We first tried an MLP architecture defined by the following: 
