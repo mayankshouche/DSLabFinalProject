@@ -6,17 +6,17 @@ In this project, we examined various NLP techniques to analyze tweets about the 
 
 ## Overview
 
-Our team used political tweet datasets, election tweet datasets, and Twitter feeds for well known politicians to gain insights from the areas we wanted to explore. Our very first version of the dataset was made of tweets from hand selected Democrats and Republicans on Twitter that we would mine from election datasets. However, as we went further in the project, we were introduced better APIs and archives that allowed us to get more structured data. As most of the Twitter contain the IDs and omit the other information for privacy purposes, we were required to use the Twitter API in conjunction with Hydrator to retrieve the full tweet.
+Our team used political tweet datasets, election tweet datasets, and Twitter feeds for well known politicians to gain insights from the areas we wanted to explore. Our very first version of the dataset was made of tweets from hand selected Democrats and Republicans on Twitter that we would mine from election datasets. However, as we went further in the project, we were introduced better APIs and archives that allowed us to get more structured data. As most of the datasets of tweets contain the IDs and omit the other information for privacy purposes, we were required to use the Twitter API in conjunction with Hydrator to retrieve the full tweet.
 
 ## Dataset for 2020 Election Tweets
 
-Our very first dataset was nearly 2000 tweets that we extracted from the IEEE 2020 political election dataset, which can be found here <a href =https://ieee-dataport.org/open-access/usa-nov2020-election-20-mil-tweets-sentiment-and-party-name-labels-dataset.>here</a> We indexed each of our hand selected users' ids into the dataset to get tweets from the users. We then hydrated the tweets using Hydrator to create our final dataset.
+Our very first dataset was nearly 2000 tweets that we extracted from the [IEEE 2020 political election dataset](https://ieee-dataport.org/open-access/usa-nov2020-election-20-mil-tweets-sentiment-and-party-name-labels-dataset). We indexed each of our hand selected users' ids into the dataset to get tweets from the users. We then hydrated the tweets using Hydrator to create our final dataset.
 
 ## Dataset for 2020 Tweets from Congressional Entities
 
-We relied on Twitter feed archives for committees, caucuses, parties, and members of Congress to form our 2020 political tweets dataset. We then were able to add a party label to the each of the tweets based on the political leaning of the respective committee, caucus, party, or member. This allowed us to find a labeled dataset of political Tweets from the year of 2020 of size 500,000, which allowed us to try more complex models to solve party classification from tweets.
+We relied on Twitter feed archives for committees, caucuses, parties, and members of Congress to form our 2020 political tweets dataset. We then were able to add a party label to the each of the tweets based on the political leaning of the respective committee, caucus, party, or member. This allowed us to find a labeled dataset of political Tweets from the year of 2020 of size 500,000, which then allowed us to try more complex models to solve party classification from tweets. 
 
-We got the archives of all political tweets from this <a href=https://github.com/alexlitel/congresstweets/tree/master/data> link </a>., which has all tweets by date in JSON format. We got the twitter information and party leaning of each of the political members from this <a href=https://alexlitel.github.io/congresstweets/>link</a>, in JSON format. We then combined the two to create a dataset that has each labled by party of either Democrat or Reublican.
+We got the archives of all political tweets from [this GitHub repository](href=https://github.com/alexlitel/congresstweets/tree/master/data), which has all tweets by date in JSON format. We got the twitter information and party leaning of each of the political members from this <a href=https://alexlitel.github.io/congresstweets/>link</a>, in JSON format. We then combined the two to create a dataset that has each labled by party of either Democrat or Reublican. Our final dataset had a column for the tweet text, including hashtags as well as mentions, and the political affiliation of the user who tweeted the tweet. This large text corpus of 500,000 political tweets all from the year 2020 enabled us to try classifying what party a tweet leans more towards as well as to look at the most important issues addressed in political tweets.
 
 
 # Topic Modeling of Election Tweets
@@ -58,11 +58,11 @@ In conclusion, utilizing NLP to filter the content of tweets allowed us to extra
 
 # Topic Modeling of 2020 Politician Tweets
 
-Our team wanted to see what the most important topics that Congressional entitities tweet per party tweet about as a whole and to see frequently occuring terms. By combining topic modeling with sentiment analysis and other analysis tools, we can learn a lot about the current political atmosphere. From our topic modeling of 2020 politician tweets, we can help machine learning models have context of a tweet to help classify what party a tweet leans towards. We can even conduct an analysis of the top topics on twitter in alongside other national or international events.
+Our team wanted to see what the most important topics that Congressional entitities tweet per party tweet about as a whole and to see frequently occuring terms. By combining topic modeling with sentiment analysis and other analysis tools, we can learn a lot about the current political atmosphere. From our topic modeling of 2020 politician tweets, we can help machine learning models have additional context of a tweet to help classify what party a tweet leans towards. We can even conduct an analysis of the top topics on twitter in alongside other national or international events for people interested in understanding how tweets relate to political events.
 
 ## Topics Extracted by LDA 
 
-The first step  we took for our topic modeling was to look at the to 10 topics tweeted about by both Democrats and Republicans. For this step, we used sklearn's CountVectorizer to vectorize tweets then LatentDirichletAllocation to group tweets together by top 10 models in an unsupervised fashion. The code snippet for this is shown below:
+The first step  we took for our topic modeling was to look at the to 10 topics tweeted about by both Democrats and Republicans. For this step, we used sklearn's CountVectorizer to vectorize tweets then LatentDirichletAllocation to group tweets together by top 10 models in an unsupervised fashion. We also attempted topic modeling with TFIDFVectorizer and NFM packages, and we also got well defined topics from that model as well. The code snippet for the LDA is shown below:
 
 ![](images/ldasnipet.png)
 
@@ -84,10 +84,10 @@ As we can see from the image, there is a clear division in the topics. Using hum
   9. Pushing for a legislation
   10. American men and women supporting
 
-Furthermore, our topic model was able to catch that coronavirus has had a strong impact on many topics, ranging from jobs, health care, school, businesses, as it is mentioned in those topics. This provides much better groupings of topics than splitting on a keyword such as covid would, in our example.
+Furthermore, our topic model was able to catch that coronavirus has had a strong impact on many topics, ranging from jobs, health care, school, businesses, as it is mentioned in those topics. This provides much better groupings of topics than splitting on a keyword such as "Covid" would, in our example. Furthermore, a machine learning model can take these topics and analyze the sentiment of the tweet to get a wholesome context around the tweet.
 
 ### WordCloud (Top n-grams) For Republican Tweets, Hashtags, and Mentions
-After looking at the main topics between Republicans and Democrats, we wanted to see what terms or phrases each is more likely to use in their tweets. Thus we decided to create word clouds for each respective party's tweets, hashtags, and mentions. 
+After looking at the main topics between Republicans and Democrats, we wanted to see what terms or phrases each party is more likely to use in their tweets. Thus, we decided to create word clouds for each respective party's tweets, hashtags, and mentions. Given word clouds, one can examine the different phrases each party uses to better understand the differences in language between the two parties. 
 
 
 #### Republican Tweets
@@ -106,7 +106,7 @@ We see here that Covid19 is the biggest as well as PaycheckProtectionProgram. Wh
 
 #### Republican Mentions
 
-We see here that Republicans mention realDonaldTrump disproportionately more than other posts. This is because members of the same party often retweet each others posts to commend their successes. Furthermore, as expected, we see that Republicans often mentioned other republicans in their tweets.
+We see here that Republicans mention realDonaldTrump disproportionately more than other posts. This is because members of the same party often retweet each others posts to commend their successes. Furthermore, as expected, we see that Republicans often mentioned other Republicans in their tweets.
 
 ![](images/republican_mentions.png)
 
@@ -115,7 +115,7 @@ We see here that Republicans mention realDonaldTrump disproportionately more tha
 
 #### Democratic Tweets
 
-We see that Democrats tweet about health care, public health, the trump administration, and small busineses the most. What is interesting is that Democrats on twitter say "Trump Administration", which carries somewhat of a negative connotation, much more often than Republicans.
+We see that Democrats tweet about health care, public health, the trump administration, and small busineses the most. What is interesting is that Democrats on twitter say the "Trump Administration",  which carries somewhat of a negative connotation, while Republicans tend not to say it at all.
 
 ![](images/democrat_tweet_cloud.png)
 
@@ -132,14 +132,14 @@ We see that Democrats are more likely to retweet HouseDemocrats, as well as othe
 ![](images/democratic_mentions.png)
 
 ## Final Thoughts
-The vectorization and LDA pair allowed us to generate realistic topics within our dataset. A possible area improvement is our n-gram generation and word inverse frequence weights. In the future we can improve our vectorization tool to provide more information packed n-grams and choose a topic model that is more natural.
+The vectorization and LDA pair allowed us to generate realistic topics within our dataset. A possible area improvement is our n-gram generation and word inverse frequence weights. In the future we can improve our vectorization tool to provide more information packed n-grams and choose a topic model that is more natural. In the future, we combine our topic modeling with the sentiment for each party around each of our extracted topics to get insights into the political environment solely from tweets. 
 
 
-# Classification With a Small Dataset
+# Classification With a Small Dataset (1 - 2k Rows)
 
 ## Overview
 
-This section covers our efforts to create a classification model for a small version of our dataset focusing on the 2020 election. We only had about 2000 labeled tweets, which is comparatively small for a language classification dataset, so we were curious whether BERT would be able to learn enough to produce classifiable embedding.
+This section covers our efforts to create a classification model to predict party leaning of either Democrat or Republican given the tweet text for a small version of our dataset focusing on the 2020 election. We only had about 2000 labeled tweets, which is comparatively small for a language classification dataset, so we were curious whether BERT would be able to learn enough to produce classifiable embedding.
 
 ## Getting Started With BERT
 
@@ -231,7 +231,7 @@ It appears that, even for small datasets, BERT is able to produce sentence embed
 
 ## Overview
 
-This section covers our efforts to create a classification model for a large version of our dataset focusing on the 2020 tweets from politicians. In this dataset, we had over 500,000 tweets, which is significantly larger than our small dataset mentioned in the previouis section. We split the entire dataset into training and testing using an 85/15 split and saved the test set as a model comparison for future models using the same dataset. Our goal was to find out whether BERT could learn an accurate way to produce classifiable embeddings given more data. 
+This section covers our efforts to create a classification model for a large version of our dataset focusing on the 2020 tweets from politicians. In this dataset, we had over 500,000 tweets, which is significantly larger than our small dataset mentioned in the previouis section. We split the entire dataset into training and testing using an 85/15 split. We then randomly sampled 5k, 10k, and 50k samples from our training split to train our model on and evaluated our performance on the other 15%. Our goal was to find out whether BERT could learn an accurate way to produce classifiable embeddings given more data. 
 
 ## Procedure
 
@@ -253,7 +253,7 @@ config = {
 }
 ```
 
-To find the best parameters, we ran 8 experiments for each of the three subsets. For each subset, 5k, 10k, and 50k tweets, we identified the models that had hyperparameters with the highest AUC values and evaluated them on the same 85/15 train-test split. We found the following parameters to be the most optimal for all three:
+To find the best parameters, we ran 8 experiments for each of the three subsets. For each subset, 5k, 10k, and 50k tweets, we identified the models that had hyperparameters with the highest AUC values and evaluated them on the same 15% test data from the 85/15 train-test split. We found the following parameters to be the most optimal for all three:
 
 | **Batch size** | **Epochs** | **Learning rate** |
 | :------------: | :--------: | :---------------: |
@@ -269,7 +269,7 @@ As shown above, it seems that BERT is able to produce accurate sentence embeddin
 
 ## Other Classifiers and Approaches
 
-We thought that in case the embeddings from BERT happened to not be linearly seperable, we could attempt to use non-linear models to classify the BERT embeddings. We first tried an MLP architecture defined by the following:
+We thought that there may be a possibility the embeddings from BERT happened to not be linearly seperable, and thus unable to be separated by the logistic regression classifier on top of BERT in the Sequence Classification model we were using. We thus attempted to use non-linear models to classify the BERT embeddings. We first tried an MLP architecture defined by the following:
 
 ```python
 class MLPClassifier(torch.nn.Module):
@@ -294,21 +294,23 @@ Another approach that we tried was employing the "bert-large-uncased" pre-traine
 
 # Classification with Very Big Dataset
 
-This section covers our efforts to train the BERT sequence classification model with a larger text corpus of nearly 150,000 entries. Our findings were that training on a larger corpus yielded better classification that the previous section's models on the validation set from the previous section . We will detail the steps we tried when fine-tuning with a large dataset.
+This section covers our efforts to train the BERT sequence classification model with a larger training text corpus of nearly 150,000 entries. Our findings were that training on a larger corpus yielded better classification that the previous section's models on the validation set from the previous section . We will detail the steps we tried when fine-tuning with a large dataset. We used the same train-test split as mentioned in the previous section, and sampled 150,000 tweets from the training region, and kept the same 15% of test tweets to analyze our results.
 
 ## Fine-tuning BERT Sequence Classification with Frozen BERT weights
 
-Our first approach to fine-tune BERT Sequence Classification was to freeze the BERT weights simply because training would take too long. We thus tried this approach of only modifying the weights of the the logistic regression classifier on top of BERT to get the following results:
+Our first approach to fine-tune BERT Sequence Classification was to freeze the BERT weights simply because training would take too long if we were to also train the BERT weights. We thus tried this approach of only modifying the weights of the the logistic regression classifier on top of BERT to get the following results:
 
 ![](images/frozen_100000.png)
 
-As we can see from the results, fine-tuning the BERT Sequence Classification model's logistic regression layer only does not allow it to learn more complex patterns from the text corpus. This could be becuase the logistic regression is not deep enough to catch on to these. 
+As we can see from the results, fine-tuning the BERT Sequence Classification model's logistic regression layer only does not allow it to learn more complex patterns from the text corpus. This could be becuase the logistic regression is not deep enough to catch on to these.
 
-We decided to take a go at fine-tuning the whole BERT Sequence Classification model with our large text corpus to get the following results on the same test set as from above.
+## Fine-tuning BERT Sequence Classification without Frozen Weights
+
+We decided to take a go at fine-tuning the whole BERT Sequence Classification model with our large text corpus to get the following results on the same test set as from above. The training was considerably longer, however, we were able to get much better results as shown below.  
 
 ![](images/150000_95.png)
 
-This shows that BERT was able to find patterns that help distinguish Democratic tweets from Republican tweets, vice versa, very well when given more data. This may be because the variance of the model greatly decreased when we fed it large samples of data. It may be that the model is deep enough to learn more complex patterns when given more data points to learn from.
+This shows that BERT was able to find patterns that help distinguish Democratic tweets from Republican tweets, vice versa, very well when given more data. Even more remarkable is that it was able to achieve such performance without being fine-tuned. This may be because the variance of the complex BERT model greatly decreased when we fed it large samples of data. Further, it may be that the model is deep enough to learn more complex patterns when given more data points to learn from. This AUC score was phenomenal achievement of the model, showing that BERT is able to learn key differences in the style of tweets of Republicans and Democrats.
 
 ## Further Analysis of Results
 One problem we observed with our problem design is that the training corpus has the same users as the testing corpus. Thus, the model may be learning tweet characteristics of specific groups of users to educate its predictions. However, there is also a chance that the model is picking up on word patterns of different groups of people. A future plan is to dive deeper into the weights of the model and find out the significance of each. Another plan is to see is making sure user ids in the training corpora are not in the test corpora. 
