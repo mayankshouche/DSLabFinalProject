@@ -65,17 +65,19 @@ Our team wanted to see what the most important topics that Congressional entitit
 
 We used TFIDF and LDA to generate the top 10 topics that politicians tweeted about in the year 2020 and we got the following.
 
-![]
+![](images/LDA_topics.png)
+
 
 As we can see from the image, there is a clear division in the topics. Furthermore, our topic model was able to catch that coronavirus has had a strong impact on many topics, ranging from jobs, health care, school, businesses, as it is mentioned in those topics.
 
 ### WordCloud (Top n-grams) For Republican Tweets, Hashtags, and Mentions
 
 #### Republican Tweets
-![](images/republican_word_cloud.png) 
-
 
 We can see here that Republicans are more likely to tweet about the protection program and mention small businesses. This is expected because these two topics are heavily on their agenda.
+
+![](images/republican_word_cloud.png) 
+
 
 #### Republican Hashtags
 
