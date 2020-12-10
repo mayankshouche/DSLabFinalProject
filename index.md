@@ -78,31 +78,37 @@ As we can see from the image, there is a clear division in the topics. Furthermo
 We can see here that Republicans are more likely to tweet about the protection program and mention small businesses. This is expected because these two topics are heavily on their agenda.
 
 #### Republican Hashtags
-![](images/republican_hashtags.png)
-
 
 We see here that Covid19 is the biggest as well as PaycheckProtectionProgram. What is interesting is that Republicans have hashtags about veterans, oil companies, foreign polity, etc.
+
+![](images/republican_mentions.png)
+
 
 #### Republican Mentions
 
 We see here that Republicans mention realDonaldTrump disproportionately more than other posts. This is because members of the same party often retweet each others posts to commend their successes. Furthermore, as expected, we see that Republicans often mentioned other republicans in their tweets.
-![](images/republican_mentions.png 
+
+![](images/republican_mentions.png)
+
 
 ### WordCloud (Top n-grams) For Democratic Tweets, Hashtags, and Mentions
 
 #### Democratic Tweets
 
 We see that Democrats tweet about health care, public health, the trump administration, and small busineses the most. What is interesting is that Democrats on twitter say "Trump Administration", which carries somewhat of a negative connotation, much more often than Republicans.
+
 ![](images/democrat_tweet_cloud.png)
 
 #### Democratic Hashtags
 
 Some interesting hashtags that the WordCloud caught onto ActOnClimate, FamiliesFirst, Juneteenth, ClimateChange, ClimateCrisis, ProtectOurCare, and more that are well known to fall under the liberal spectrum.
+
 ![](images/democrat_hashtags.png)
 
 #### Democratic Mentions
 
 We see that Democrats are more likely to retweet HouseDemocrats, as well as other democratic congressmen and congresswomen.
+
 ![](images/democratic_mentions.png)
 
 # Classification With a Small Dataset
