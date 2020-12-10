@@ -16,14 +16,12 @@ Our very first dataset was nearly 2000 tweets that we extracted from the IEEE 20
 
 We relied on Twitter feed archives for committees, caucuses, parties, and members of Congress to form our 2020 political tweets dataset. We then were able to add a party label to the each of the tweets based on the political leaning of the respective committee, caucus, party, or member. This allowed us to find a labeled dataset of political Tweets from the year of 2020 of size 500,000, which allowed us to try more complex models to solve party classification from tweets.
 
-We got the archives of all political tweets from this link https://github.com/alexlitel/congresstweets/tree/master/data., which has all tweets by date in JSON format. We got the twitter information and party leaning of each of the political members from this link, https://alexlitel.github.io/congresstweets/, in JSON format. We then combined the two to create a dataset that has tweet labled by party. Our final combined dataset looked like this:
-![]
+We got the archives of all political tweets from this link https://github.com/alexlitel/congresstweets/tree/master/data., which has all tweets by date in JSON format. We got the twitter information and party leaning of each of the political members from this link, https://alexlitel.github.io/congresstweets/, in JSON format. We then combined the two to create a dataset that has tweet labled by party. 
 
-## Random Sampling of Political Tweets from Users across the United States
 
-## Topic Modeling of Election Tweets
+# Topic Modeling of Election Tweets
 
-### Overview
+## Overview
 
 In addition to making election predictions based off of Twitter data, we also wanted to gauge which topics were driving the discourse of the election on Twitter. To do this, we used a topic modeling strategy on four separate datasets consisting of Democrat, Republican, Green Party, and Libertarian affiliated tweets. This allowed us to identify the people, policies, and ideas that motivated each respective party in the 2020 Presidential Election.
 
@@ -31,25 +29,25 @@ To extract topics from a set of tweets we used an automated keyword extraction t
 
 At this point our data was ready to be processed. We used the bag of words model, which focuses on how often a word reoccurs in the text rather than the sequence words occur in. Using the Count Vectorizer library from sklearn, we tokenized the text from all of the tweets in our dataset. Then, using the returned vector, we calculated the frequency of bigrams, or sequences of two words, across the dataset. Choosing to use bigrams allowed us to find several distinct topics that were discussed regarding the election, whereas unigrams provided too little information and trigrams were unreliable given the already compact nature of tweets. These bigrams were then plotted in order of their frequency, allowing us to visualize the importance of certain topics and candidates to each individual party.
 
-#### Democrats
+### Democrats
 
 ![](images/2020-12-08-14-01-58.png)
 
 Looking at the most common topics from Democrat affiliated accounts, we can clearly see the most important issues to the party for the 2020 election. With the COVID-19 pandemic far exceeding any other topic, even the candidates for the election, it is clear that the Democratic Party placed a greater emphasis on current pressing issues in America than their nominees. Additionally, we can see the Democratic Party’s urgency to encourage citizens to vote with topics such as “vote Biden”, “vote early”, and “vote mail” each appearing numerous times throughout the dataset. From this graph alone, it is clear that healthcare and the current state of the pandemic in the nation was one of the main driving forces of the party during this election cycle, evidenced by topics such as “covid 19”, “dr fauci”, and “care act”, which refers to the Affordable Care Act enacted by the Obama administration. The Democrats distrust for Republicans, and specifically Trump, is also shown in this graph, since “trump lied” is among the leading topics from the dataset. Therefore, through this visualization of the Democratic tweets leading up to the election we can clearly see a snapshot of the political discourse within the party.
 
-## Republicans
+### Republicans
 
 ![](images/2020-12-08-14-04-23.png)
 
 After repeating the same process of keyword extraction with a Republican centric dataset, we can see a stark difference in the importance of topics between the Republican and Democratic parties leading up to the election. The Republicans were clearly much more candidate-oriented, with their focus being on Donald Trump himself rather than policies or current events in the nation. Many of the topics listed in the graph above are focused on specific individuals, whereas the Democratic graph, while still having an emphasis on Trump and Biden, also focused on other policy issues in the country. Similarly to the Democratic Party’s graph, we can also see the Republican Party’s distrust for their opponents. With some of the common topics being “hunter biden”, “sleepy joe”, and “biden email”, we can get a glimpse at the accusations made against Joe Biden and his family leading up to the election, and the importance each took on within the party. For example, the graph illustrates that Hunter Biden was a rather large focus for the Republican Party, as they sought to explain their suspicions regarding Joe Biden’s son to potential voters. Ultimately, the Republicans focused more on the individuals directly involved in the presidential race, as opposed to the Democrats, who focused more on current events.
 
-#### Green Party
+### Green Party
 
 ![](images/2020-12-08-14-05-06.png)
 
 For the Green Party we reverted to focusing on unigrams, as the limited tweets available for this dataset was not conducive to a bigram setting. Through these unigrams we can see that the Green Party placed an emphasis on their own nominees, Howie Hawkins and Angela Walker, while focusing less on Biden and Trump. We can also get a sense of the beliefs of the Green Party, with policies such as defunding police and war as well as “gnd”, or the Green New Deal, being the party’s most prominent policy points.
 
-#### Libertarian Party
+### Libertarian Party
 
 ![](images/2020-12-08-14-05-36.png)
 
@@ -57,11 +55,11 @@ Finally, we can see the most prominent subjects for the Libertarian Party headin
 
 In conclusion, utilizing NLP to filter the content of tweets allowed us to extract common keywords that occurred throughout the dataset with a bag of words model. These keywords were then paired to create bigrams (in all cases except for the Green Party), which, when graphed by frequency, gave a strong insight into the priorities of each distinct party and the direction they desired the nation to follow. With these newfound understandings of the intentions of each party, we can also extract the desires of certain users or collective states overall by identifying which party they most align with according to their tweets. Therefore, we can not only point to their political affiliation in broad terms, but also pinpoint which policies and ideals they are likely to most align with.
 
-## Topic Modeling of 2020 Politicians Tweets
+# Topic Modeling of 2020 Politicians Tweets
 
 Our team wanted to see what the most important topics that Congressional entitities tweet about per party and as a whole, and to see what phrases are used more. Combining topic modeling with sentiment analysis and other analysis tools, we can learn a lot about the current political atmosphere. From our topic modeling of 2020 politician tweets, we help machine learning models have context of a tweet to help classify what party a tweet leans towards.
 
-### Topics Mined By LDA
+## Topics Mined By LDA
 
 We used TFIDF and LDA to generate the top 10 topics that politicians tweeted about in the year 2020 and we got the following.
 
@@ -278,7 +276,14 @@ This section covers our efforts to train the BERT sequence classification model 
 
 Our first approach to fine-tune BERT Sequence Classification was to freeze the BERT weights simply because training would take too long. We thus tried this approach of only modifying the weights of the the logistic regression classifier on top of BERT to get the following results:
 
-![]
+![](images/frozen_100000.png)
+
+As we can see from the results, fine-tuning the BERT Sequence Classification model's logistic regression layer only does not allow it to learn more complex patterns from the text corpus. This could be becuase the logistic regression is not deep enough to catch on to these. 
+
+We decided to take a go at fine-tuning the whole BERT Sequence Classification model with our large text corpus to get the following results.
+
+
+This shows that BERT was able to 
 
 # Interesting Results from Labeled Tweets
 
