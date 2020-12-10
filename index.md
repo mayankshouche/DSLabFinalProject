@@ -6,11 +6,11 @@ In this project, we wanted to examine various NLP techniques to analyze tweets a
 
 ## Overview
 
-Our team used political tweet datasets, election tweet datasets, and Tweet feeds for well known politicians for our tasks to gain insights from the areas we wanted to explore. Our very first version of the dataset were tweets from hand selected Democrats and Republicans on Twitter that we would mine from election datasets. However, as we went further in the project, we were introduced better APIs and archives that allowed us to get more structured data. As most of the Twitter contain the IDs and omit the other information for privacy purposes, we were required to use the Twitter API in conjunction with Hydrator to retrieve the full tweet.
+Our team used political tweet datasets, election tweet datasets, and Twitter feeds for well known politicians for our tasks to gain insights from the areas we wanted to explore. Our very first version of the dataset was made of tweets from hand selected Democrats and Republicans on Twitter that we would mine from election datasets. However, as we went further in the project, we were introduced better APIs and archives that allowed us to get more structured data. As most of the Twitter contain the IDs and omit the other information for privacy purposes, we were required to use the Twitter API in conjunction with Hydrator to retrieve the full tweet.
 
 ## Dataset for 2020 Election Tweets
 
-Our very first dataset was nearly 2000 tweets that we extracted from the IEEE 2020 political election dataset. We indexed each of our hand selected users' ids into the dataset to get tweets from the users. We then hydrated the tweets using Hydrator to create our final dataset.
+Our very first dataset was nearly 2000 tweets that we extracted from the IEEE 2020 political election dataset, which can be found here https://ieee-dataport.org/open-access/usa-nov2020-election-20-mil-tweets-sentiment-and-party-name-labels-dataset. We indexed each of our hand selected users' ids into the dataset to get tweets from the users. We then hydrated the tweets using Hydrator to create our final dataset.
 
 ## Dataset for 2020 Tweets from Congressional Entities
 
@@ -344,6 +344,9 @@ Throughout the course of this project, we had the chance to learn many skills in
 
 One of the successes of this project was that we were able to create a novel labeled dataset for our task, gathering over 500,000 entries, which is comparable to the larger datasets in the GLUE benchmark, a classic NLP metric. We also managed to train multiple models into the .9+ AUC range and acheive accuracies in the high 80 percents, which indicates that we were successfully able to train accurate classifiers for broad political tweets.
 
-In the future, given more time, we would like to try more complex models, such as an XGBoost model that can take into account BERT embeddings as well as tweet metadata, like hashtags. We would also like to fine-tune our election analysis to look at electoral districts as opposed to full states.
+In the future, given more time, we would like to try more complex models, such as an XGBoost model that can take into account BERT embeddings as well as tweet metadata, like hashtags. We would also like to fine-tune our election analysis to look at electoral districts as opposed to full states. Some things that we wanted to explore but could not were to explore with using XGBoost model trained on a dataset with the top 10 topics and bigrams as well as sentiments. We also expanded our natural language understanding, as well as generation, capabilities to describe a tweet understand and describe the key points in a tweet based on our topic models. These are future things to consider, and we hope to see others try it or to try it ourselves some other time.
 
 Ultimately, we were able to achieve most of our goals for this project, and managed to show useful insights regarding analysis of tweets using NLP methods as well as regarding the political distribution of Twitter in the US.
+
+
+
