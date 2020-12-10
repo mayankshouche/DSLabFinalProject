@@ -141,6 +141,10 @@ The vectorization and LDA pair allowed us to generate realistic topics within ou
 
 This section covers our efforts to create a classification model to predict party leaning of either Democrat or Republican given the tweet text for a small version of our dataset focusing on the 2020 election. We only had about 2000 labeled tweets, which is comparatively small for a language classification dataset, so we were curious whether BERT would be able to learn enough to produce classifiable embedding.
 
+## Tweet Preprocessing
+Before diving into the models, we wanted to make sure to provide our BERT models with well formatted sentences with special characters and URLs ommitted. Our tweet preprocessing was standard across training the machine learning models around the 2020 political tweets dataset. Our preprocessing consisted of removing the '#' and '@' symbols, denoting hashtag and mention respectively, and keeping only the text that immediately followed them. We wanted to keep the text following the symbols because they provide contextual information around a tweet that can help humans and machines alike understand the tweet better. Furthermore, BERT already has a robust text preprocesser in it's tokenizer module, so we let the BERT tokenizer carry the weight of preprocessing the rest of the text. 
+
+
 ## Getting Started With BERT
 
 To start off with, we knew we wanted to embed the tweets we got using an existing language model. We could have chosen smaller, simpler models like word2vec, GloVe, or ELMo, but due to the easy availability of state-of-the-art Transformer-based models like BERT from [huggingface](https://huggingface.co/), we ended up choosing BERT.
@@ -296,7 +300,7 @@ Another approach that we tried was employing the "bert-large-uncased" pre-traine
 
 This section covers our efforts to train the BERT sequence classification model with a larger training text corpus of nearly 150,000 entries. Our findings were that training on a larger corpus yielded better classification that the previous section's models on the validation set from the previous section . We will detail the steps we tried when fine-tuning with a large dataset. We used the same train-test split as mentioned in the previous section, and sampled 150,000 tweets from the training region, and kept the same 15% of test tweets to analyze our results.
 
-## Fine-tuning BERT Sequence Classification with Frozen BERT weights
+## Fine-tuning BERT Sequence Classification with Frozen BERT Weights
 
 Our first approach to fine-tune BERT Sequence Classification was to freeze the BERT weights simply because training would take too long if we were to also train the BERT weights. We thus tried this approach of only modifying the weights of the the logistic regression classifier on top of BERT to get the following results:
 
