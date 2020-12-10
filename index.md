@@ -226,10 +226,13 @@ With these hyperparameters, we found that the AUC to steadily increase as the da
 
 ![AUC Score](images/auc_graph.PNG)
 
+## Final Thoughts
+
+As shown above, it seems that BERT is able to produce accurate sentence embeddings that have a good level of linear seperability that can be learned to a significant level by logistic regression, even more so with larger datasets. These results are extremely promissing, as we have found a way to accurately categorize political tweets as Democratic and Republican, just from the content of the tweet itself. This is extremely promising and useful, as these models can be used to help predict election results, which we will explore and discuss in the next section.
 
 
 
-## Other Classifiers
+## Other Classifiers and Approaches
 
 We thought that in case the embeddings from BERT happened to not be linearly seperable, we could attempt to use non-linear models to classify the BERT embeddings. We first tried an MLP architecture defined by the following: 
 
@@ -248,3 +251,6 @@ class MLPClassifier(torch.nn.Module):
 ```
 
 However, this showed at best, worse to equal performance compared to our simple linear classifier. We also tried an XGBoost model trained and tuned over the output features from BERT of our training data. Unfortunately, this did significantly worse than both other approaches. Ultimately, in the interest of time, we selected our hyperparameter-tuned simple linear classifier stacked with BERT as our best model for political tweet classification on small datasets. Although, given more time, it would have been interesting to play around with the number of hidden layers and hidden layer sizes in our MLP architecture to see if we could produce a better model.
+
+
+Another approach that we tried was employing the "bert-large-uncased" pre-trained model in addition to the "bert-base-uncased" model. To start off, we tested out the larger BERT model for our small dataset, the one with around 2,000 tweets. However, we quickly found that this caused testing and hyperparameter tuning to take considerably longer. In addition, the increase in AUC we obtained from using the large BERT model was extremely small, around only a 0.001 increase. Because of this, we decided to make a tradeoff between performance speed and a small increase in AUC, choosing performance speed given our limited time and resources to complete the project. 
