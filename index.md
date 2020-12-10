@@ -72,17 +72,21 @@ As we can see from the image, there is a clear division in the topics. Furthermo
 ### WordCloud (Top n-grams) For Republican Tweets, Hashtags, and Mentions
 
 #### Republican Tweets
+![](images/republican_word_cloud.png) 
+
 
 We can see here that Republicans are more likely to tweet about the protection program and mention small businesses. This is expected because these two topics are heavily on their agenda.
 
 #### Republican Hashtags
+![](images/republican_hashtags.png)
+
 
 We see here that Covid19 is the biggest as well as PaycheckProtectionProgram. What is interesting is that Republicans have hashtags about veterans, oil companies, foreign polity, etc.
 
 #### Republican Mentions
 
 We see here that Republicans mention realDonaldTrump disproportionately more than other posts. This is because members of the same party often retweet each others posts to commend their successes. Furthermore, as expected, we see that Republicans often mentioned other republicans in their tweets.
-![]
+![](images/republican_mentions.png 
 
 ### WordCloud (Top n-grams) For Democratic Tweets, Hashtags, and Mentions
 
