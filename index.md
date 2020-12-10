@@ -86,7 +86,7 @@ As we can see from the image, there is a clear division in the topics. Using hum
 
 Furthermore, our topic model was able to catch that coronavirus has had a strong impact on many topics, ranging from jobs, health care, school, businesses, as it is mentioned in those topics. This provides much better groupings of topics than splitting on a keyword such as "Covid" would, in our example. Furthermore, a machine learning model can take these topics and analyze the sentiment of the tweet to get a wholesome context around the tweet.
 
-### WordCloud (Top n-grams) For Republican Tweets, Hashtags, and Mentions
+### WordCloud (Top n-grams) For Republican and Democratic Tweets, Hashtags, and Mentions
 After looking at the main topics between Republicans and Democrats, we wanted to see what terms or phrases each party is more likely to use in their tweets. Thus, we decided to create word clouds for each respective party's tweets, hashtags, and mentions. Given word clouds, one can examine the different phrases each party uses to better understand the differences in language between the two parties. 
 
 
@@ -99,7 +99,7 @@ We can see here that Republicans are more likely to tweet about the protection p
 
 #### Republican Hashtags
 
-We see here that Covid19 is the biggest as well as PaycheckProtectionProgram. What is interesting is that Republicans have hashtags about veterans, oil companies, foreign polity, etc. 
+We see here that Covid19 is the biggest as well as PaycheckProtectionProgram. What is interesting is that Republicans have hashtags about veterans, oil companies, foreign policy, etc. 
 
 ![](images/republican_mentions.png)
 
