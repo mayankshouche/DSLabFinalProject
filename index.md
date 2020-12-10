@@ -243,7 +243,7 @@ With these hyperparameters, we found that the AUC to steadily increase as the da
 
 As shown above, it seems that BERT is able to produce accurate sentence embeddings that have a good level of linear seperability that can be learned to a significant level by logistic regression, even more so with larger datasets. These results are extremely promissing, as we have found a way to accurately categorize political tweets as Democratic and Republican, just from the content of the tweet itself. This is extremely promising and useful, as these models can be used to help predict election results, which we will explore and discuss in the next section.
 
-## Other Classifiers and Approaches
+# Other Classifiers and Approaches
 
 We thought that in case the embeddings from BERT happened to not be linearly seperable, we could attempt to use non-linear models to classify the BERT embeddings. We first tried an MLP architecture defined by the following:
 
@@ -282,8 +282,12 @@ As we can see from the results, fine-tuning the BERT Sequence Classification mod
 
 We decided to take a go at fine-tuning the whole BERT Sequence Classification model with our large text corpus to get the following results.
 
+![](images/150000_95.png)
 
-This shows that BERT was able to 
+This shows that BERT was able to find patterns that help distinguish Democratic tweets from Republican tweets, vice versa, very well when given more data. This may be because the variance of the model greatly decreased when we fed it large samples of data. It may be that the model is deep enough to learn more complex patterns when given more data points to learn from.
+
+## Further Analysis of Results
+One problem we observed with our problem design is that the training corpus has the same users as the testing corpus. Thus, the model may be learning tweet characteristics of specific groups of users to educate its predictions. However, there 
 
 # Interesting Results from Labeled Tweets
 
