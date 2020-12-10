@@ -59,6 +59,9 @@ In conclusion, utilizing NLP to filter the content of tweets allowed us to extra
 
 
 # Classification With a Small Dataset
+## Overview
+This section covers our efforts to create a classification model for a small version of our dataset focusing on the 2020 election. We only had about 2000 labeled tweets, which is comparatively small for a language classification dataset, so we were curious whether BERT would be able to learn enough to produce classifiable embeddings.
+
 ## Getting Started With BERT
 
 To start off with, we knew we wanted to embed the tweets we got using an existing language model. We could have chosen smaller, simpler models like word2vec, GloVe, or ELMo, but due to the easy availability of state-of-the-art Transformer-based models like BERT from [huggingface](https://huggingface.co/), we ended up choosing BERT.
@@ -167,4 +170,4 @@ However, this showed at best, worse to equal performance compared to our simple 
 
 ## Final Thoughts
 
-It appears that, even for small datasets, BERT is able to produce sentence embeddings that have a decent level of linear seperability, enough to be learned to a significant level by a simple logistic regression. This is promising, as researchers can easily evaluate recent political topics on Twitter that only have a small corpus of tweets with a fast-training model. In the next section, we explore the impact of a larger dataset on the performance of BERT to seperate political tweets.
+It appears that, even for small datasets, BERT is able to produce sentence embeddings that have a decent level of linear seperability, enough to be learned to a significant level by a simple logistic regression. This is promising, as researchers can easily evaluate recent political topics on Twitter that only have a small corpus of tweets with a fast-training model. In the next section, we explore the impact of a larger dataset on the performance of BERT to seperate broader political tweets.
