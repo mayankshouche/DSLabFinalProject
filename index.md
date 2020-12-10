@@ -89,17 +89,17 @@ We see here that Republicans mention realDonaldTrump disproportionately more tha
 #### Democratic Tweets
 
 We see that Democrats tweet about health care, public health, the trump administration, and small busineses the most. What is interesting is that Democrats on twitter say "Trump Administration", which carries somewhat of a negative connotation, much more often than Republicans.
-![](democrat_tweet_cloud.png)
+![](images/democrat_tweet_cloud.png)
 
 #### Democratic Hashtags
 
 Some interesting hashtags that the WordCloud caught onto ActOnClimate, FamiliesFirst, Juneteenth, ClimateChange, ClimateCrisis, ProtectOurCare, and more that are well known to fall under the liberal spectrum.
-![](democrat_hashtags.png)
+![](images/democrat_hashtags.png)
 
 #### Democratic Mentions
 
 We see that Democrats are more likely to retweet HouseDemocrats, as well as other democratic congressmen and congresswomen.
-![](democratic_mentions.png)
+![](images/democratic_mentions.png)
 
 # Classification With a Small Dataset
 
