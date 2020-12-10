@@ -280,7 +280,7 @@ Our first approach to fine-tune BERT Sequence Classification was to freeze the B
 
 As we can see from the results, fine-tuning the BERT Sequence Classification model's logistic regression layer only does not allow it to learn more complex patterns from the text corpus. This could be becuase the logistic regression is not deep enough to catch on to these. 
 
-We decided to take a go at fine-tuning the whole BERT Sequence Classification model with our large text corpus to get the following results.
+We decided to take a go at fine-tuning the whole BERT Sequence Classification model with our large text corpus to get the following results on the same test set as from above.
 
 ![](images/150000_95.png)
 
